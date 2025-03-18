@@ -1,0 +1,38 @@
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Winda Pharm</h5>
+                <p>Professional supplier of Active Pharmaceutical Ingredients (APIs), specializing in hormone steroid products and health-related products.</p>
+            </div>
+            // ... existing code ...
+        </div>
+    </div>
+</footer> 
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+        Products
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+        <li><a class="dropdown-item" href="products.html?category=hormone">Hormone Steroids</a></li>
+        <li><a class="dropdown-item" href="products.html?category=testosterone">Testosterone Products</a></li>
+        <li><a class="dropdown-item" href="products.html?category=trenbolone">Trenbolone Products</a></li>
+        <li><a class="dropdown-item" href="products.html?category=nandrolone">Nandrolone Products</a></li>
+        <li><a class="dropdown-item" href="products.html?category=boldenone">Boldenone Products</a></li>
+        <li><a class="dropdown-item" href="products.html?category=drostanolone">Drostanolone Products</a></li>
+        <li><a class="dropdown-item" href="products.html?category=methenolone">Methenolone Products</a></li>
+        <li><a class="dropdown-item" href="products.html?category=oral">Oral Steroids</a></li>
+        <li><a class="dropdown-item" href="products.html?category=injectable">Injectable Steroids</a></li>
+        <li><a class="dropdown-item" href="products.html?category=sarms">SARMs Powders</a></li>
+        <li><a class="dropdown-item" href="products.html?category=nootropics">Nootropics Powders</a></li>
+        <li><a class="dropdown-item" href="products.html?category=cosmetic">Cosmetic Additives</a></li>
+        <li><a class="dropdown-item" href="products.html?category=health">Health Products</a></li>
+        <li><a class="dropdown-item" href="products.html">All Products</a></li>
+    </ul>
+</li> 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.123456789012!2d114.12345678901234!3d22.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3401234567890123%3A0x1234567890123456!2sWinda%20Pharm!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 

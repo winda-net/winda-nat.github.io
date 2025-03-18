@@ -63,114 +63,26 @@ document.addEventListener('DOMContentLoaded', function() {
 function loadProducts(category) {
     // Sample product data
     const products = [
-        {
-            id: 1,
-            name: 'Testosterone Base Powder',
-            image: 'product1.jpg',
-            description: 'High-purity active ingredient, suitable for medical and bodybuilding fields',
-            category: 'testosterone',
-            purity: '99%+',
-            cas: '58-22-0'
-        },
-        {
-            id: 2,
-            name: 'Testosterone Enanthate',
-            image: 'product2.jpg',
-            description: 'Professional-grade active ingredient, quality guaranteed',
-            category: 'testosterone',
-            purity: '99%+',
-            cas: '315-37-7'
-        },
-        {
-            id: 3,
-            name: 'Trenbolone Acetate',
-            image: 'product3.jpg',
-            description: 'Highly effective active ingredient, suitable for professional bodybuilding',
-            category: 'trenbolone',
-            purity: '99%+',
-            cas: '10161-34-9'
-        },
-        {
-            id: 4,
-            name: 'Anavar',
-            image: 'product4.jpg',
-            description: 'Professional-grade active ingredient, quality guaranteed',
-            category: 'oral',
-            purity: '99%+',
-            cas: '53-39-4'
-        },
-        {
-            id: 5,
-            name: 'Cosmetic Additives',
-            image: 'product5.jpg',
-            description: 'High-quality cosmetic raw materials, suitable for various cosmetic productions',
-            category: 'cosmetic',
-            purity: '99%+',
-            cas: 'Various'
-        },
-        {
-            id: 6,
-            name: 'Health Supplements',
-            image: 'product6.jpg',
-            description: 'Supplement raw materials designed for health and bodybuilding',
-            category: 'health',
-            purity: '99%+',
-            cas: 'Various'
-        },
-        {
-            id: 7,
-            name: 'Testosterone Propionate',
-            image: 'product7.jpg',
-            description: 'High-quality active ingredient, suitable for professional medical applications',
-            category: 'testosterone',
-            purity: '99%+',
-            cas: '57-85-2'
-        },
-        {
-            id: 8,
-            name: 'Nandrolone Phenylpropionate',
-            image: 'product8.jpg',
-            description: 'Professional-grade active ingredient, quality guaranteed',
-            category: 'nandrolone',
-            purity: '99%+',
-            cas: '62-90-8'
-        },
-        {
-            id: 9,
-            name: 'Boldenone Undecylenate',
-            image: 'product9.jpg',
-            description: 'Professional-grade active ingredient, quality guaranteed',
-            category: 'boldenone',
-            purity: '99%+',
-            cas: '13103-34-9'
-        },
-        {
-            id: 10,
-            name: 'Nandrolone Decanoate',
-            image: 'product10.jpg',
-            description: 'Professional medical-grade active ingredient, quality guaranteed',
-            category: 'nandrolone',
-            purity: '99%+',
-            cas: '360-70-3'
-        },
-        {
-            id: 11,
-            name: 'Methandienone',
-            image: 'product11.jpg',
-            description: 'Professional-grade oral steroid, quality guaranteed',
-            category: 'oral',
-            purity: '99%+',
-            cas: '72-63-9'
-        },
-        {
-            id: 12,
-            name: 'Masteron',
-            image: 'product12.jpg',
-            description: 'Professional-grade drostanolone propionate, high quality',
-            category: 'drostanolone',
-            purity: '99%+',
-            cas: '521-12-0'
-        }
+        // 激素类固醇
+        { id: 1, name: "Testosterone Enanthate", category: "hormone", image: "images/product1.jpg", description: "High-purity active ingredient, suitable for medical and bodybuilding fields", price: "$100/g", purity: ">99%" },
+        { id: 2, name: "Nandrolone Decanoate", category: "hormone", image: "images/product2.jpg", description: "Professional-grade active ingredient, quality guaranteed", price: "$120/g", purity: ">99%" },
+        { id: 3, name: "Trenbolone Acetate", category: "hormone", image: "images/product3.jpg", description: "Highly effective active ingredient, suitable for professional bodybuilding", price: "$150/g", purity: ">99%" },
+        { id: 4, name: "Boldenone Undecylenate", category: "boldenone", image: "images/product4.jpg", description: "High-quality active ingredient, suitable for medical applications", price: "$130/g", purity: ">99%" },
+        { id: 5, name: "Drostanolone Propionate", category: "drostanolone", image: "images/product5.jpg", description: "Professional-grade active ingredient, quality guaranteed", price: "$140/g", purity: ">99%" },
+        { id: 6, name: "Methenolone Enanthate", category: "methenolone", image: "images/product6.jpg", description: "High-purity active ingredient, suitable for medical and bodybuilding fields", price: "$110/g", purity: ">99%" },
+        // 口服类固醇
+        { id: 7, name: "Methandienone", category: "oral", image: "images/product7.jpg", description: "Professional-grade active ingredient, quality guaranteed", price: "$12-15/g", purity: "99.5%" },
+        { id: 8, name: "Stanozolol", category: "oral", image: "images/product8.jpg", description: "Highly effective active ingredient, suitable for professional bodybuilding", price: "$18-22/g", purity: "99.0%" },
+        { id: 9, name: "Oxandrolone", category: "oral", image: "images/product9.jpg", description: "High-purity active ingredient, suitable for medical and bodybuilding fields", price: "$25-30/g", purity: "99.5%" },
+        // SARMs
+        { id: 10, name: "Ostarine", category: "sarms", image: "images/product10.jpg", description: "High-quality SARM powder, suitable for research purposes", price: "$50/g", purity: ">99%" },
+        { id: 11, name: "Ligandrol", category: "sarms", image: "images/product11.jpg", description: "Professional-grade SARM powder, quality guaranteed", price: "$60/g", purity: ">99%" },
+        // 化妆品添加剂
+        { id: 12, name: "Hyaluronic Acid", category: "cosmetic", image: "images/product12.jpg", description: "High-purity cosmetic additive, suitable for skincare products", price: "$50/g", purity: "99.0%" },
+        { id: 13, name: "Retinol", category: "cosmetic", image: "images/product13.jpg", description: "Professional-grade cosmetic additive, quality guaranteed", price: "$60/g", purity: "99.5%" },
+        // 健康产品
+        { id: 14, name: "Vitamin C", category: "health", image: "images/product14.jpg", description: "High-purity health supplement, suitable for dietary use", price: "$10/g", purity: "99.0%" },
+        { id: 15, name: "Coenzyme Q10", category: "health", image: "images/product15.jpg", description: "Professional-grade health supplement, quality guaranteed", price: "$20/g", purity: "99.5%" }
     ];
     
     // Filter products by category if specified
@@ -193,13 +105,13 @@ function loadProducts(category) {
             productCard.className = 'col-lg-4 col-md-6';
             productCard.innerHTML = `
                 <div class="product-card">
-                    <img src="images/${product.image}" alt="${product.name}" class="img-fluid">
+                    <img src="${product.image}" alt="${product.name}" class="img-fluid">
                     <div class="product-info">
                         <h3>${product.name}</h3>
                         <p>${product.description}</p>
                         <div class="product-meta">
                             <span class="badge bg-primary">Purity: ${product.purity}</span>
-                            <span class="badge bg-success">CAS: ${product.cas}</span>
+                            <span class="badge bg-success">Price: ${product.price}</span>
                         </div>
                         <a href="product-detail.html?id=${product.id}" class="btn btn-outline-primary mt-3">View Details</a>
                     </div>

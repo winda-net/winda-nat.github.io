@@ -1,7 +1,10 @@
 /* 全局样式 */
 :root {
-    --primary-color: #0056b3;
-    --secondary-color: #6c757d;
+    --primary-color: #1A2A6C; /* 深蓝色 */
+    --secondary-color: #4A90E2; /* 浅蓝色 */
+    --background-color: #F5F7FA; /* 浅灰色背景 */
+    --text-color: #333333; /* 深灰色文字 */
+    --light-text-color: #FFFFFF; /* 白色文字 */
     --light-color: #f8f9fa;
     --dark-color: #343a40;
     --success-color: #28a745;
@@ -42,10 +45,15 @@ body {
 .navbar {
     padding: 10px 0;
     transition: all 0.3s ease;
+    background-color: var(--primary-color) !important;
 }
 
 .navbar-brand img {
     transition: all 0.3s ease;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--light-text-color) !important;
 }
 
 .nav-link {
@@ -55,7 +63,7 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
 }
 
 .nav-link.active {
@@ -139,6 +147,9 @@ body {
 .card {
     transition: all 0.3s ease;
     height: 100%;
+    background-color: var(--light-text-color);
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
@@ -153,7 +164,8 @@ body {
 
 /* 页脚样式 */
 footer {
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
 }
 
 footer a {
@@ -582,4 +594,30 @@ footer a:hover {
     z-index: 1;
     color: #333;
     text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+/* 按钮 */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* 表格 */
+.table {
+    background-color: var(--light-text-color);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--background-color);
+}
+
+/* 联系表单 */
+.contact-form-container {
+    background-color: var(--light-text-color);
+    border: 1px solid #E0E0E0;
 } 
