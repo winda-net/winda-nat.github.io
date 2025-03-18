@@ -1,0 +1,27 @@
+# 启用 URL 重写引擎
+RewriteEngine On
+
+# 将 product-detail.html?id=X 重写为 product/X
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+product-detail\.html\?id=([0-9]+) [NC]
+RewriteRule ^ /product/%1? [R=301,L]
+
+# 内部重写 /product/X 到 product-detail.html?id=X
+RewriteRule ^product/([0-9]+)$ product-detail.html?id=$1 [L,QSA]
+
+# 将 products.html?category=X 重写为 category/X
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+products\.html\?category=([^&\s]+) [NC]
+RewriteRule ^ /category/%1? [R=301,L]
+
+# 内部重写 /category/X 到 products.html?category=X
+RewriteRule ^category/([^/]+)$ products.html?category=$1 [L,QSA]
+
+# 强制使用 HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 强制使用 www
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 设置自定义 404 页面
+ErrorDocument 404 /404.html 

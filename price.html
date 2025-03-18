@@ -13,7 +13,47 @@
 </head>
 <body>
     <!-- Top Navigation Bar (Same as index.html) -->
-    <!-- ... -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Winda Pharm Logo" height="50">
+                <span>Winda Pharm</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="products.html?category=hormone">Hormone Steroids</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=testosterone">Testosterone Products</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=trenbolone">Trenbolone Products</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=nandrolone">Nandrolone Products</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=cosmetic">Cosmetic Additives</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=health">Health Products</a></li>
+                            <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pure-steroid.html">Pure Steroid Powders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="price.html">Product Prices</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Page Header -->
     <div class="page-header">
@@ -36,51 +76,54 @@
                     <div class="price-category mb-5">
                         <h2>Oral Steroid Prices</h2>
                         <div class="table-responsive">
-                            <table class="table table-bordered table-hover">
-                                <thead class="table-primary">
+                            <table class="table table-striped">
+                                <thead>
                                     <tr>
                                         <th>Product Name</th>
-                                        <th>CAS Number</th>
                                         <th>Purity</th>
-                                        <th>Price (USD/g)</th>
-                                        <th>MOQ (g)</th>
+                                        <th>Price</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>Testosterone Enanthate</td>
+                                        <td>>99%</td>
+                                        <td>$100/g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nandrolone Decanoate</td>
+                                        <td>>99%</td>
+                                        <td>$120/g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trenbolone Acetate</td>
+                                        <td>>99%</td>
+                                        <td>$150/g</td>
+                                    </tr>
+                                    <tr>
                                         <td>Methandienone</td>
-                                        <td>72-63-9</td>
                                         <td>99.5%</td>
-                                        <td>$12-15</td>
-                                        <td>10</td>
+                                        <td>$12-15/g</td>
                                     </tr>
                                     <tr>
                                         <td>Stanozolol</td>
-                                        <td>10418-03-8</td>
                                         <td>99.0%</td>
-                                        <td>$18-22</td>
-                                        <td>10</td>
+                                        <td>$18-22/g</td>
                                     </tr>
                                     <tr>
                                         <td>Oxandrolone</td>
-                                        <td>53-39-4</td>
                                         <td>99.5%</td>
-                                        <td>$25-30</td>
-                                        <td>10</td>
+                                        <td>$25-30/g</td>
                                     </tr>
                                     <tr>
                                         <td>Oxymetholone</td>
-                                        <td>434-07-1</td>
                                         <td>99.0%</td>
-                                        <td>$15-18</td>
-                                        <td>10</td>
+                                        <td>$15-18/g</td>
                                     </tr>
                                     <tr>
                                         <td>Methyltestosterone</td>
-                                        <td>58-18-4</td>
                                         <td>99.0%</td>
-                                        <td>$12-15</td>
-                                        <td>10</td>
+                                        <td>$12-15/g</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -88,46 +131,26 @@
                     </div>
                     
                     <div class="price-category mb-5">
-                        <h2>Cosmetic Additives</h2>
+                        <h2>Cosmetic Additive Prices</h2>
                         <div class="table-responsive">
-                            <table class="table table-bordered table-hover">
-                                <thead class="table-primary">
+                            <table class="table table-striped">
+                                <thead>
                                     <tr>
                                         <th>Product Name</th>
-                                        <th>CAS Number</th>
                                         <th>Purity</th>
-                                        <th>Price (USD/g)</th>
-                                        <th>MOQ (g)</th>
+                                        <th>Price</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>Hyaluronic Acid</td>
-                                        <td>9067-32-7</td>
-                                        <td>98.0%</td>
-                                        <td>$20-25</td>
-                                        <td>10</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Coenzyme Q10</td>
-                                        <td>303-98-0</td>
                                         <td>99.0%</td>
-                                        <td>$15-20</td>
-                                        <td>10</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vitamin C</td>
-                                        <td>50-81-7</td>
-                                        <td>99.5%</td>
-                                        <td>$5-8</td>
-                                        <td>50</td>
+                                        <td>$50/g</td>
                                     </tr>
                                     <tr>
                                         <td>Retinol</td>
-                                        <td>68-26-8</td>
-                                        <td>98.0%</td>
-                                        <td>$18-22</td>
-                                        <td>10</td>
+                                        <td>99.5%</td>
+                                        <td>$60/g</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -135,46 +158,26 @@
                     </div>
                     
                     <div class="price-category mb-5">
-                        <h2>Health Products</h2>
+                        <h2>Health Product Prices</h2>
                         <div class="table-responsive">
-                            <table class="table table-bordered table-hover">
-                                <thead class="table-primary">
+                            <table class="table table-striped">
+                                <thead>
                                     <tr>
                                         <th>Product Name</th>
-                                        <th>CAS Number</th>
                                         <th>Purity</th>
-                                        <th>Price (USD/g)</th>
-                                        <th>MOQ (g)</th>
+                                        <th>Price</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>L-Carnitine</td>
-                                        <td>541-15-1</td>
+                                        <td>Vitamin C</td>
                                         <td>99.0%</td>
-                                        <td>$10-15</td>
-                                        <td>50</td>
+                                        <td>$10/g</td>
                                     </tr>
                                     <tr>
-                                        <td>Creatine Monohydrate</td>
-                                        <td>6020-87-7</td>
+                                        <td>Coenzyme Q10</td>
                                         <td>99.5%</td>
-                                        <td>$5-8</td>
-                                        <td>100</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Beta-Alanine</td>
-                                        <td>107-95-9</td>
-                                        <td>99.0%</td>
-                                        <td>$8-12</td>
-                                        <td>50</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Taurine</td>
-                                        <td>107-35-7</td>
-                                        <td>99.0%</td>
-                                        <td>$6-10</td>
-                                        <td>50</td>
+                                        <td>$20/g</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -193,10 +196,43 @@
     </section>
 
     <!-- Footer (Same as index.html) -->
-    <!-- ... -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Winda Pharm</h5>
+                    <p>Professional supplier of Active Pharmaceutical Ingredients (APIs), specializing in hormone steroid products and health-related products.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="products.html" class="text-white">Products</a></li>
+                        <li><a href="pure-steroid.html" class="text-white">Pure Steroid Powders</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li><a href="price.html" class="text-white">Product Prices</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope me-2"></i> info@windapharm.com</p>
+                    <p><i class="fab fa-telegram me-2"></i> +86 171 8678 5083</p>
+                    <p><i class="fab fa-whatsapp me-2"></i> +86 171 8678 5083</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2023 Winda Pharm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Contact Float Button & Modal (Same as index.html) -->
-    <!-- ... -->
+    <div class="contact-float">
+        <button id="contactBtn" class="btn btn-primary rounded-circle">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
