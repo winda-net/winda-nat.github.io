@@ -1,0 +1,143 @@
+文件夹结构
+winda-pharm/
+├── index.html
+├── products.html
+├── product-detail.html
+├── contact.html
+├── price.html
+├── pure-steroid.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── script.js
+│   ├── products.js
+│   ├── product-detail.js
+│   └── service-worker.js
+└── images/
+    ├── logo.png
+    ├── slide1.jpg
+    ├── slide2.jpg
+    ├── slide3.jpg
+    ├── company-profile.jpg
+    ├── about.jpg
+    ├── pure-steroid.jpg
+    ├── news1.jpg
+    ├── news2.jpg
+    ├── news3.jpg
+    ├── product1.jpg
+    ├── product1-small.jpg
+    ├── product1-medium.jpg
+    ├── product2.jpg
+    ├── product2-small.jpg
+    ├── product2-medium.jpg
+    └── ... (其他产品图片)
+	
+	
+	
+需要准备的图片
+Logo 图片
+logo.png - Winda Pharm 的公司标志
+轮播图
+slide1.jpg - 专业活性药物成分供应商主题图片 (1920x600px)
+slide2.jpg - 高品质类固醇粉末主题图片 (1920x600px)
+slide3.jpg - 全球供应链主题图片 (1920x600px)
+公司介绍图片
+company-profile.jpg - 公司简介图片 (600x400px)
+about.jpg - 关于我们页面图片 (600x400px)
+pure-steroid.jpg - 纯类固醇粉末页面主图 (600x400px)
+新闻图片
+news1.jpg - 国际医药展览会新闻图片 (400x300px)
+news2.jpg - 产品价格更新新闻图片 (400x300px)
+news3.jpg - 比特币支付指南新闻图片 (400x300px)
+产品图片
+每个产品需要准备三种尺寸的图片，用于响应式加载：
+product1.jpg - 原始大图 (1200x800px)
+product1-medium.jpg - 中等尺寸 (600x400px)
+product1-small.jpg - 小尺寸 (300x200px)
+需要为以下产品准备图片：
+产品1: 睾酮基础粉末
+产品2: 庚酸睾酮
+产品3: 醋酸群勃龙
+产品4: Anavar
+产品5: 化妆品添加剂
+产品6: 健康补充剂
+产品7: 丙酸睾酮
+产品8: 抗衰老添加剂
+产品9: 蛋白质补充剂
+产品10: 癸酸诺龙
+产品11: 保湿添加剂
+产品12: 氨基酸补充剂
+占位图片
+placeholder.jpg - 用于图片懒加载的占位图 (50x50px)
+需要修改的信息
+公司信息
+公司名称: Winda Pharm
+地址: 上海市浦东新区张江高科技园区
+电话: +86 171 8678 5083
+邮箱: info@windapharm.com
+联系人: 张先生
+产品信息
+每个产品的详细信息已在 product-detail.js 中定义，包括：
+产品名称
+产品描述
+产品特点
+应用领域
+CAS号
+纯度
+外观
+包装信息
+如需修改，请更新 js/product-detail.js 文件中的产品数据
+价格信息
+价格表中的产品价格信息，包括：
+产品名称
+CAS号
+纯度
+价格 (USD/kg)
+最小起订量
+这些信息在 price.html 文件中定义
+新闻信息
+新闻标题
+新闻内容
+新闻日期
+这些信息在 index.html 文件的新闻部分定义	
+
+
+复制HTML文件
+将所有HTML文件复制到 winda-pharm 根目录
+复制CSS和JavaScript文件
+将 style.css 复制到 winda-pharm/css 目录
+将所有JS文件复制到 winda-pharm/js 目录
+准备并添加图片
+准备所有需要的图片，并将它们放入 winda-pharm/images 目录
+确保图片尺寸和格式符合要求
+修改信息
+根据需要修改HTML文件中的公司信息
+更新 product-detail.js 中的产品数据
+更新 price.html 中的价格信息
+更新 index.html 中的新闻信息
+测试网站
+在本地服务器上测试网站，确保所有功能正常工作
+测试响应式布局，确保在不同设备上显示正常
+测试图片懒加载和Service Worker功能
+优化图片
+使用图片优化工具（如 ImageOptim、TinyPNG）压缩图片，减少文件大小
+确保所有图片都有适当的 alt 属性，提高可访问性
+部署网站
+将整个 winda-pharm 目录上传到您的网站服务器
+确保服务器配置正确，支持Service Worker
+注意事项
+图片优化
+所有图片应该经过压缩，以减少加载时间
+使用WebP格式可以进一步减小文件大小，但需要提供回退方案
+响应式图片
+确保使用 srcset 和 sizes 属性，让浏览器加载最适合当前设备的图片
+Service Worker
+确保服务器通过HTTPS提供服务，因为Service Worker只在HTTPS环境下工作
+测试离线功能，确保关键页面可以在离线状态下访问
+表单处理
+实际部署时，需要实现服务器端表单处理逻辑
+可以使用PHP、Node.js或其他后端技术处理表单提交
+浏览器兼容性
+测试网站在不同浏览器（Chrome、Firefox、Safari、Edge）上的表现
+确保关键功能在不支持现代特性的浏览器上有适当的回退方案
+通过以上步骤，您可以成功实施Winda Pharm网站，并确保它在各种设备上都能提供良好的用户体验。

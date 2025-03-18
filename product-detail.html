@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Winda Pharm</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Winda Pharm Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#news">News</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 id="productTitle">Product Details</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" id="productBreadcrumb">Product Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <figure class="product-image-container">
+                        <img id="productImage" src="images/product1.jpg" alt="Product Image" class="img-fluid rounded shadow">
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <article class="product-details">
+                        <header>
+                            <h2 id="productName" class="mb-3">Product Name</h2>
+                            <div class="product-meta mb-4">
+                                <span class="badge bg-primary me-2">High Quality</span>
+                                <span class="badge bg-success me-2">Professional Grade</span>
+                                <span class="badge bg-info">Purity 99%+</span>
+                            </div>
+                        </header>
+                        <section class="product-description mb-4">
+                            <h4>Product Description</h4>
+                            <p id="productDescription">Detailed product description will be displayed here.</p>
+                        </section>
+                        <section class="product-features mb-4">
+                            <h4>Product Features</h4>
+                            <ul id="productFeatures">
+                                <li>Feature 1</li>
+                                <li>Feature 2</li>
+                                <li>Feature 3</li>
+                            </ul>
+                        </section>
+                        <section class="product-applications mb-4">
+                            <h4>Applications</h4>
+                            <p id="productApplications">Application fields will be displayed here.</p>
+                        </section>
+                        <footer class="product-actions">
+                            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#orderModal">
+                                <i class="fas fa-shopping-cart me-2"></i>Place Order
+                            </button>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="tab-content">
+                <div class="tab-pane fade" id="usage" role="tabpanel" aria-labelledby="usage-tab">
+                    <h4>Usage Method</h4>
+                    <p id="productUsage">Product usage methods and precautions will be displayed here.</p>
+                    <div class="alert alert-warning mt-3">
+                        <i class="fas fa-exclamation-triangle me-2"></i> Note: This product is intended for professional use only. Please use under the guidance of a professional.
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+                    <h4>Shipping Information</h4>
+                    <p>We provide global safe delivery services to ensure product safety and timely delivery.</p>
+                    <ul>
+                        <li>Standard Packaging: 1kg/bag, Customizable Packaging Available</li>
+                        <li>Shipping Method: International Express, Air, Sea</li>
+                        <li>Delivery Time: Generally 3-15 working days depending on destination</li>
+                        <li>Safety Guarantee: Professional Packaging and Privacy Protection to Ensure Product Safety Delivery</li>
+                    </ul>
+                    <p>For more shipping information, please <a href="contact.html">contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="section-title text-center mb-4">Related Products</h3>
+            <div class="row g-4" id="relatedProducts">
+                <!-- Related products will be loaded dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalLabel">Submit Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="orderForm" action="https://formsubmit.co/Your Email Address" method="POST">
+                        <input type="hidden" name="_subject" value="New Order Notification - Winda Pharm">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="hidden" name="_next" value="https://Your Website Domain/order-success.html">
+                        
+                        <input type="hidden" id="orderProductId" name="productId">
+                        <input type="hidden" id="orderProductName" name="productName">
+                        
+                        <div class="mb-3">
+                            <label for="orderQuantity" class="form-label">Minimum Order Quantity (kg)</label>
+                            <input type="number" class="form-control" id="orderQuantity" name="quantity" min="1" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="orderName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="orderName" name="name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="orderAddress" class="form-label">Address</label>
+                            <textarea class="form-control" id="orderAddress" name="address" rows="3" required></textarea>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="orderPhone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="orderPhone" name="phone" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="orderEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="orderEmail" name="email" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="orderNotes" class="form-label">Notes</label>
+                            <textarea class="form-control" id="orderNotes" name="notes" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="captcha" class="form-label">Captcha</label>
+                            <div class="d-flex">
+                                <input type="text" class="form-control me-2" id="captcha" name="captcha" required>
+                                <div class="captcha-image bg-light d-flex align-items-center justify-content-center px-3" id="captchaImage">
+                                    <span id="captchaText" style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.2rem; letter-spacing: 3px;"></span>
+                                </div>
+                                <button type="button" class="btn btn-outline-secondary ms-2" id="refreshCaptcha">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <input type="text" name="_honey" style="display:none">
+                        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Submit Order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Order Submission Successful</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-check-circle text-success fa-4x"></i>
+                        <h4 class="mt-3">Thank you for your order!</h4>
+                        <p>We have received your order information, and we will contact you shortly to confirm the details.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Winda Pharm</h5>
+                    <p>Professional supplier of active pharmaceutical ingredients, specializing in hormone steroids and health-related products.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="products.html" class="text-white">Products</a></li>
+                        <li><a href="pure-steroid.html" class="text-white">Pure Steroid Powders</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li><a href="price.html" class="text-white">Product Prices</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope me-2"></i> info@windapharm.com</p>
+                    <p><i class="fab fa-telegram me-2"></i> +86 171 8678 5083</p>
+                    <p><i class="fab fa-whatsapp me-2"></i> +86 171 8678 5083</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2023 Winda Pharm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Us Floating Button -->
+    <div class="contact-float">
+        <button id="contactBtn" class="btn btn-primary rounded-circle">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <!-- Contact Us Floating Window -->
+    <div id="contactModal" class="contact-modal">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h4>Contact Us</h4>
+                <button id="closeContactBtn" class="btn-close"></button>
+            </div>
+            <div class="contact-body">
+                <p><i class="fas fa-building me-2"></i> <strong>Winda Pharm</strong></p>
+                <p><i class="fas fa-map-marker-alt me-2"></i> Address: Zhangjiang High-Tech Park, Pudong New Area, Shanghai</p>
+                <p><i class="fas fa-phone me-2"></i> Phone: +86 171 8678 5083</p>
+                <p><i class="fas fa-envelope me-2"></i> Email: info@windapharm.com</p>
+                <p><i class="fas fa-clock me-2"></i> Working Time: Monday to Friday 9:00-18:00</p>
+                <div class="mt-3">
+                    <h5>Online Message</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add to product details below -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="section-title">Product Detailed Information</h3>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4>About <span id="productNameInContent">Product Name</span></h4>
+                            <p id="productLongDescription">Detailed product description will be displayed here...</p>
+                            
+                            <h4 class="mt-4">Technical Specifications</h4>
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th width="30%">CAS Number</th>
+                                        <td id="productCasNumber">-</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Molecular Formula</th>
+                                        <td id="productFormula">-</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Molecular Weight</th>
+                                        <td id="productWeight">-</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Purity</th>
+                                        <td id="productPurity">99%+</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Appearance</th>
+                                        <td id="productAppearance">White Crystalline Powder</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <h4 class="mt-4">Frequently Asked Questions</h4>
+                            <div class="accordion" id="productFAQ">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                            What is the shelf life of this product?
+                                        </button>
+                                    </h2>
+                                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#productFAQ">
+                                        <div class="accordion-body">
+                                            Under appropriate storage conditions (avoid light, dry, and sealed), the shelf life of the product is usually 2 years.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                            How to ensure product quality?
+                                        </button>
+                                    </h2>
+                                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#productFAQ">
+                                        <div class="accordion-body">
+                                            Our products are strictly tested for quality control, including purity test, solubility test, and stability test. We can provide detailed quality analysis reports.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                            What is the minimum order quantity?
+                                        </button>
+                                    </h2>
+                                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#productFAQ">
+                                        <div class="accordion-body">
+                                            Our minimum order quantity is usually 1 kg, but we can also provide customized services based on customer needs.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h4>Why Choose Us?</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> High Quality Guarantee</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Professional Technical Support</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Safe and Reliable Delivery</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Competitive Price</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Quick Response to Customer Needs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4>Need Help?</h4>
+                            <p>If you have any questions about the product, please contact our professional team at any time.</p>
+                            <a href="contact.html" class="btn btn-primary w-100">Contact Us</a>
+                            
+                            <div class="mt-4">
+                                <p class="mb-2"><i class="fas fa-envelope me-2"></i> info@windapharm.com</p>
+                                <p class="mb-2"><i class="fab fa-whatsapp me-2"></i> +86 171 8678 5083</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/product-detail.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "<span id="jsonProductName">Product Name</span>",
+      "image": "<span id="jsonProductImage">Product Image URL</span>",
+      "description": "<span id="jsonProductDescription">Product Description</span>",
+      "brand": {
+        "@type": "Brand",
+        "name": "Winda Pharm"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "<span id="jsonProductUrl">Product URL</span>",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get product data and update structured data
+        const product = products.find(p => p.id == productId);
+        if (product) {
+            document.getElementById('jsonProductName').textContent = product.name;
+            document.getElementById('jsonProductImage').textContent = window.location.origin + '/' + product.image;
+            document.getElementById('jsonProductDescription').textContent = product.description;
+            document.getElementById('jsonProductUrl').textContent = window.location.href;
+        }
+    });
+    </script>
+</body>
+</html> 
