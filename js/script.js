@@ -6,13 +6,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactBtn && closeContactBtn && contactModal) {
         contactBtn.addEventListener('click', function() {
-            contactModal.classList.add('show');
+            contactModal.classList.toggle('show');
         });
         
         closeContactBtn.addEventListener('click', function() {
             contactModal.classList.remove('show');
         });
     }
+    
+    // 点击页面其他区域关闭模态框
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.contact-float') && !e.target.closest('.contact-modal')) {
+            contactModal.classList.remove('show');
+        }
+    });
     
     // 导航栏下拉菜单
     const dropdowns = document.querySelectorAll('.dropdown');
@@ -46,34 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }
-    });
-    
-    // 表单提交处理
-    const forms = document.querySelectorAll('form');
-    
-    forms.forEach(form => {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // 简单的表单验证
-            let isValid = true;
-            const inputs = form.querySelectorAll('input[required], textarea[required]');
-            
-            inputs.forEach(input => {
-                if (!input.value.trim()) {
-                    input.classList.add('is-invalid');
-                    isValid = false;
-                } else {
-                    input.classList.remove('is-invalid');
-                }
-            });
-            
-            if (isValid) {
-                // 在实际项目中，这里应该发送数据到服务器
-                alert('表单提交成功！我们将尽快与您联系。');
-                form.reset();
-            }
-        });
     });
     
     // 初始化触摸交互

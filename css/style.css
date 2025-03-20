@@ -1,12 +1,12 @@
 /* 全局样式 */
 :root {
-    --primary-color: #1A2A6C; /* 深蓝色 */
-    --secondary-color: #4A90E2; /* 浅蓝色 */
+    --primary-color: #3498DB; /* 蓝色 */
+    --secondary-color: #2ECC71; /* 绿色 */
     --background-color: #F5F7FA; /* 浅灰色背景 */
     --text-color: #333333; /* 深灰色文字 */
     --light-text-color: #FFFFFF; /* 白色文字 */
     --light-color: #f8f9fa;
-    --dark-color: #343a40;
+    --dark-color: #34495E; /* 深灰色 */
     --success-color: #28a745;
     --info-color: #17a2b8;
     --warning-color: #ffc107;
@@ -15,9 +15,10 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+    color: var(--text-color);
     line-height: 1.6;
     padding-top: 76px;
+    background-color: var(--background-color);
 }
 
 .section-title {
@@ -43,9 +44,33 @@ body {
 
 /* 导航栏样式 */
 .navbar {
+    background: transparent !important; /* 确保背景色完全透明 */
+    box-shadow: none !important; /* 去除阴影 */
     padding: 10px 0;
     transition: all 0.3s ease;
-    background-color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-collapse {
+    background-color: transparent !important; /* 确保下拉菜单背景色透明 */
+    padding: 10px;
 }
 
 .navbar-brand img {
@@ -59,28 +84,105 @@ body {
 .nav-link {
     font-weight: 500;
     padding: 8px 15px !important;
+    color: var(--dark-color) !important; /* 深灰色文字 */
     transition: all 0.3s ease;
 }
 
-.nav-link:hover {
-    color: var(--secondary-color) !important;
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important; /* 悬停和激活状态使用主色 */
+    background-color: rgba(52, 152, 219, 0.1); /* 添加浅色背景 */
+    border-radius: 4px;
 }
 
-.nav-link.active {
+.dropdown-menu {
+    background-color: var(--light-text-color); /* 下拉菜单背景色为白色 */
+    border: 1px solid #E0E0E0; /* 添加边框 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: var(--dark-color) !important; /* 下拉菜单项文字颜色为深灰色 */
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(52, 152, 219, 0.1); /* 悬停状态添加浅色背景 */
     color: var(--primary-color) !important;
-    font-weight: 600;
 }
 
 /* 轮播图样式 */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 400px; /* 固定高度 */
+    position: relative;
+}
+
 .carousel-item {
-    height: 600px;
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-item.active {
+    opacity: 1;
 }
 
 .carousel-item img {
-    object-fit: cover;
+    width: 100%;
     height: 100%;
+    object-fit: cover; /* 确保图片填充整个容器 */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* 使箭头图标为白色 */
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--primary-color);
 }
 
 .carousel-caption {
@@ -104,7 +206,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: var(--light-text-color);
     height: 100%;
 }
 
@@ -120,27 +222,27 @@ body {
     transition: all 0.3s ease;
 }
 
-.product-info {
+.product-card .card-body {
     padding: 20px;
     display: flex;
     flex-direction: column;
     height: calc(100% - 220px);
 }
 
-.product-info h3 {
+.product-card .card-title {
     font-size: 1.25rem;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
-.product-info p {
-    color: var(--secondary-color);
+.product-card .card-text {
+    color: var(--text-color);
     margin-bottom: 15px;
     flex-grow: 1;
 }
 
-.product-meta {
-    margin-bottom: 15px;
+.product-card .btn {
+    align-self: flex-start;
 }
 
 /* 新闻卡片样式 */
@@ -164,32 +266,65 @@ body {
 
 /* 页脚样式 */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     color: var(--light-text-color);
 }
 
 footer a {
+    color: var(--light-text-color);
     transition: all 0.3s ease;
 }
 
 footer a:hover {
-    color: #fff !important;
-    text-decoration: underline !important;
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 /* 联系我们浮窗样式 */
 .contact-float {
     position: fixed;
-    right: 30px;
-    bottom: 30px;
+    bottom: 20px;
+    right: 20px;
     z-index: 1000;
 }
 
 .contact-float button {
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-float button span {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .contact-float button span {
+        display: inline;
+    }
+}
+
+.contact-float .tooltip {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-float:hover .tooltip {
+    opacity: 1;
 }
 
 .contact-modal {
@@ -216,8 +351,42 @@ footer a:hover {
     border-bottom: 1px solid #eee;
 }
 
+.contact-header h4 {
+    margin: 0;
+    font-weight: 600;
+}
+
 .contact-body {
     padding: 20px;
+}
+
+.contact-body p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-body p i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.contact-body a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-body a:hover {
+    color: var(--secondary-color);
+}
+
+.contact-body form {
+    margin-top: 20px;
+}
+
+.contact-body form .btn {
+    width: 100%;
 }
 
 /* 产品详情页样式 */
@@ -477,6 +646,61 @@ footer a:hover {
     .price-category .table {
         font-size: 0.9rem;
     }
+
+    .carousel-inner {
+        height: 300px; /* 小屏幕下调整轮播图高度 */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+
+    .carousel-indicators button {
+        width: 8px;
+        height: 8px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+
+    .price-category h2 {
+        font-size: 20px;
+    }
+
+    .price-note h3 {
+        font-size: 18px;
+    }
+
+    .price-note p {
+        font-size: 14px;
+    }
+
+    .navbar-brand {
+        font-size: 1rem; /* 小屏幕下进一步缩小品牌名称 */
+    }
+
+    .navbar-toggler {
+        padding: 0.2rem 0.4rem; /* 小屏幕下进一步缩小切换按钮 */
+        font-size: 0.9rem;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px; /* 增加下拉菜单与导航栏的间距 */
+    }
+
+    .nav-link {
+        padding: 6px 10px !important; /* 小屏幕下进一步缩小导航链接的内边距 */
+    }
+
+    .dropdown-menu {
+        margin-top: 5px; /* 增加下拉菜单与父链接的间距 */
+    }
+
+    .dropdown-item {
+        padding: 6px 10px; /* 小屏幕下进一步缩小下拉菜单项的内边距 */
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -598,26 +822,88 @@ footer a:hover {
 
 /* 按钮 */
 .btn-primary {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-}
-
-.btn-primary:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
 
+.btn-primary:hover {
+    background-color: #2980B9;
+    border-color: #2980B9;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}
+
 /* 表格 */
 .table {
-    background-color: var(--light-text-color);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: middle; /* 确保内容垂直居中 */
+    border-top: 1px solid #dee2e6;
+    text-align: left; /* 确保内容左对齐 */
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600; /* 加粗表头文字 */
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: var(--background-color);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-responsive {
+    overflow-x: auto; /* 确保表格在小屏幕上可滚动 */
 }
 
 /* 联系表单 */
 .contact-form-container {
     background-color: var(--light-text-color);
     border: 1px solid #E0E0E0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.col-md-4, .col-sm-6 {
+    padding: 15px;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+}
+
+@media (max-width: 991.98px) {
+    .col-md-4, .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-md-4, .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 } 

@@ -13,11 +13,11 @@
 </head>
 <body>
     <!-- Top Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Winda Pharm Logo" height="50">
-                <span>Winda Pharm</span>
+                <span style="color: #3498DB;">Winda</span>
+                <span style="color: #2ECC71;">Pharm</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -25,24 +25,34 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
                             Products
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                            <li><a class="dropdown-item" href="products.html?category=hormone">Hormone Steroids</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=testosterone">Testosterone Products</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=trenbolone">Trenbolone Products</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=nandrolone">Nandrolone Products</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=cosmetic">Cosmetic Additives</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=health">Health Products</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=steroid">Steroid Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=testosterone">Testosterone Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=trenbolone">Trenbolone Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=nandrolone">Nandrolone Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=boldenone">Boldenone Steroids</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=drostanolone">Drostanolone Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=methenolone">Methenolone Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=oral">Oral Steroid Powders</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=injectable">Injectable Steroids Oil</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=semi">Bulk Semi Steroid Oil</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=sarms">SARMs Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=nootropics">Nootropics Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=other">Other Pharma APIs</a></li>
                             <li><a class="dropdown-item" href="products.html">All Products</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pure-steroid.html">Pure Steroid Powders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hgh-peptides.html">HGH & Peptides</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
@@ -64,28 +74,19 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/slide1.jpg" class="d-block w-100" alt="High-Quality Steroid & API Manufacturer">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4">High-Quality Steroid & API Manufacturer</h1>
-                    <p class="lead">Winda Pharm specializes in producing premium hormone steroids and pharmaceutical ingredients.</p>
-                    <a href="products.html" class="btn btn-primary btn-lg">Browse Products</a>
-                </div>
+                <a href="products.html">
+                    <img src="images/slide1.jpg" class="d-block w-100" alt="High-Quality Steroid & API Manufacturer">
+                </a>
             </div>
             <div class="carousel-item">
-                <img src="images/slide2.jpg" class="d-block w-100" alt="Reliable Supply Chain">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4">Reliable Supply Chain</h1>
-                    <p class="lead">We ensure stable and timely delivery of high-quality products to meet your needs.</p>
-                    <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
-                </div>
+                <a href="contact.html">
+                    <img src="images/slide2.jpg" class="d-block w-100" alt="Reliable Supply Chain">
+                </a>
             </div>
             <div class="carousel-item">
-                <img src="images/slide3.jpg" class="d-block w-100" alt="Competitive Pricing">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4">Competitive Pricing</h1>
-                    <p class="lead">Get the best value for your money with our competitive pricing and flexible MOQs.</p>
-                    <a href="price.html" class="btn btn-primary btn-lg">View Prices</a>
-                </div>
+                <a href="price.html">
+                    <img src="images/slide3.jpg" class="d-block w-100" alt="Competitive Pricing">
+                </a>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -132,72 +133,67 @@
     </section>
 
     <!-- Products -->
-    <section id="products" class="py-5">
+    <section class="py-5">
         <div class="container">
+            <h2 class="text-center mb-5">Our Products</h2>
             <div class="row">
-                <div class="col-lg-12 text-center mb-4">
-                    <h2 class="section-title">Our Products</h2>
-                    <p class="text-muted">The Highest Quality Products</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4 col-sm-6">
-                    <div class="product-card">
-                        <img src="images/product1.jpg" alt="Testosterone Enanthate" class="img-fluid">
-                        <div class="product-info">
-                            <h3>Testosterone Enanthate</h3>
-                            <p>High-purity active ingredient, suitable for medical and bodybuilding fields</p>
-                            <a href="product-detail.html?id=1" class="btn btn-outline-primary">View Details</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="images/products/testosterone-enanthate.jpg" class="card-img-top" alt="Testosterone Enanthate">
+                        <div class="card-body">
+                            <h5 class="card-title">Testosterone Enanthate</h5>
+                            <p class="card-text">High-quality testosterone enanthate powder for muscle growth and performance enhancement.</p>
+                            <a href="product-detail.html?id=1" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="product-card">
-                        <img src="images/product2.jpg" alt="Nandrolone Decanoate" class="img-fluid">
-                        <div class="product-info">
-                            <h3>Nandrolone Decanoate</h3>
-                            <p>Professional-grade active ingredient, quality guaranteed</p>
-                            <a href="product-detail.html?id=2" class="btn btn-outline-primary">View Details</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="images/products/trenbolone-acetate.jpg" class="card-img-top" alt="Trenbolone Acetate">
+                        <div class="card-body">
+                            <h5 class="card-title">Trenbolone Acetate</h5>
+                            <p class="card-text">Pure trenbolone acetate powder for advanced bodybuilding and cutting cycles.</p>
+                            <a href="product-detail.html?id=2" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="product-card">
-                        <img src="images/product3.jpg" alt="Trenbolone Acetate" class="img-fluid">
-                        <div class="product-info">
-                            <h3>Trenbolone Acetate</h3>
-                            <p>Highly effective active ingredient, suitable for professional bodybuilding</p>
-                            <a href="product-detail.html?id=3" class="btn btn-outline-primary">View Details</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="images/products/nandrolone-decanoate.jpg" class="card-img-top" alt="Nandrolone Decanoate">
+                        <div class="card-body">
+                            <h5 class="card-title">Nandrolone Decanoate</h5>
+                            <p class="card-text">Premium nandrolone decanoate powder for muscle mass and recovery.</p>
+                            <a href="product-detail.html?id=3" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="product-card">
-                        <img src="images/product4.jpg" alt="Anavar" class="img-fluid">
-                        <div class="product-info">
-                            <h3>Anavar</h3>
-                            <p>Professional-grade active ingredient, quality guaranteed</p>
-                            <a href="product-detail.html?id=4" class="btn btn-outline-primary">View Details</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="images/products/boldenone-undecylenate.jpg" class="card-img-top" alt="Boldenone Undecylenate">
+                        <div class="card-body">
+                            <h5 class="card-title">Boldenone Undecylenate</h5>
+                            <p class="card-text">High-purity boldenone undecylenate powder for endurance and lean muscle gains.</p>
+                            <a href="product-detail.html?id=4" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="product-card">
-                        <img src="images/product5.jpg" alt="Cosmetic Additives" class="img-fluid">
-                        <div class="product-info">
-                            <h3>Cosmetic Additives</h3>
-                            <p>High-quality cosmetic raw materials, suitable for various cosmetic productions</p>
-                            <a href="product-detail.html?id=5" class="btn btn-outline-primary">View Details</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="images/products/stanozolol.jpg" class="card-img-top" alt="Stanozolol">
+                        <div class="card-body">
+                            <h5 class="card-title">Stanozolol</h5>
+                            <p class="card-text">Micronized stanozolol powder for cutting and strength enhancement.</p>
+                            <a href="product-detail.html?id=5" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="product-card">
-                        <img src="images/product6.jpg" alt="Health Supplements" class="img-fluid">
-                        <div class="product-info">
-                            <h3>Health Supplements</h3>
-                            <p>Supplement raw materials designed for health and bodybuilding</p>
-                            <a href="product-detail.html?id=6" class="btn btn-outline-primary">View Details</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="images/products/oxandrolone.jpg" class="card-img-top" alt="Oxandrolone">
+                        <div class="card-body">
+                            <h5 class="card-title">Oxandrolone</h5>
+                            <p class="card-text">Pure oxandrolone powder for fat loss and muscle preservation.</p>
+                            <a href="product-detail.html?id=6" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -309,42 +305,6 @@
         </div>
     </section>
 
-    <!-- Contact Us -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-4">
-                    <h2 class="section-title">Contact Us</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="contact-info">
-                        <p><i class="fas fa-user me-2"></i> <strong>Contact Person:</strong> Mr. Zhang</p>
-                        <p><i class="fab fa-telegram me-2"></i> <strong>Telegram:</strong> +86 171 8678 5083</p>
-                        <p><i class="fab fa-whatsapp me-2"></i> <strong>WhatsApp:</strong> +86 171 8678 5083</p>
-                        <p><i class="fas fa-envelope me-2"></i> <strong>Email:</strong> info@windapharm.com</p>
-                        <p><i class="fas fa-map-marker-alt me-2"></i> <strong>Address:</strong> Zhangjiang Hi-Tech Park, Pudong New Area, Shanghai</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <form class="contact-form">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container">
@@ -382,6 +342,7 @@
         <button id="contactBtn" class="btn btn-primary rounded-circle">
             <i class="fas fa-comment-dots"></i>
         </button>
+        <div class="tooltip">Contact Us</div>
     </div>
 
     <!-- Contact Modal -->

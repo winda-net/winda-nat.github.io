@@ -12,11 +12,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                Winda Pharm
+                <span style="color: #3498DB;">Winda</span>
+                <span style="color: #2ECC71;">Pharm</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -26,14 +27,35 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="products.html">Products</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="products.html?category=steroid">Steroid Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=testosterone">Testosterone Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=trenbolone">Trenbolone Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=nandrolone">Nandrolone Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=boldenone">Boldenone Steroids</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=drostanolone">Drostanolone Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=methenolone">Methenolone Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=oral">Oral Steroid Powders</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=injectable">Injectable Steroids Oil</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=semi">Bulk Semi Steroid Oil</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=sarms">SARMs Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=nootropics">Nootropics Powder</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=other">Other Pharma APIs</a></li>
+                            <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#about">About Us</a>
+                        <a class="nav-link" href="pure-steroid.html">Pure Steroid Powders</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#news">News</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="price.html">Product Prices</a>
                     </li>
                 </ul>
             </div>
@@ -60,19 +82,33 @@
             <div class="row">
                 <!-- Product Images -->
                 <div class="col-lg-6">
-                    <img src="images/product1.jpg" alt="Testosterone Enanthate" class="img-fluid">
+                    <img src="images/products/testosterone-enanthate.jpg" alt="Testosterone Enanthate" class="img-fluid rounded shadow">
                 </div>
                 
                 <!-- Product Information -->
                 <div class="col-lg-6">
                     <div class="product-info">
                         <h1>Testosterone Enanthate</h1>
-                        <p>High-purity active ingredient, suitable for medical and bodybuilding fields</p>
-                        <p><strong>Price:</strong> $100/g</p>
-                        <p><strong>Purity:</strong> >99%</p>
-                        <p><strong>Appearance:</strong> White crystalline powder</p>
-                        <p><strong>Packaging:</strong> 1kg/bag, 25kg/drum</p>
-                        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                        <p class="lead">High-purity testosterone enanthate powder for muscle growth and performance enhancement.</p>
+                        <div class="product-meta mb-4">
+                            <span class="badge bg-primary">Purity: 99%+</span>
+                            <span class="badge bg-success">CAS: 315-37-7</span>
+                        </div>
+                        <h4>Product Description</h4>
+                        <p>Testosterone Enanthate is a high-quality steroid powder used for muscle growth, performance enhancement, and medical applications. It is known for its long-lasting effects and high purity, making it a popular choice among bodybuilders and athletes.</p>
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>High purity, over 99%</li>
+                            <li>Compliant with international pharmacopoeial standards</li>
+                            <li>Long-lasting effects</li>
+                            <li>Safe and reliable delivery</li>
+                        </ul>
+                        <h4>Applications</h4>
+                        <ul>
+                            <li>Muscle growth</li>
+                            <li>Performance enhancement</li>
+                            <li>Medical applications</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -188,7 +224,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h5>Winda Pharm</h5>
-                    <p>Professional supplier of active pharmaceutical ingredients, specializing in hormone steroids and health-related products.</p>
+                    <p>Professional supplier of Active Pharmaceutical Ingredients (APIs), specializing in hormone steroid products and health-related products.</p>
                 </div>
                 <div class="col-md-4">
                     <h5>Quick Links</h5>
