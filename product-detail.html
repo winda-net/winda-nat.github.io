@@ -3,64 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="productTitle">Product Detail - Winda Pharm | High-Quality Steroid Powders</title>
-    <meta name="description" id="productDescriptionMeta" content="High-quality pharmaceutical ingredients with guaranteed purity and quality. View product details and specifications.">
-    <meta name="keywords" id="productKeywordsMeta" content="steroid powders, pharmaceutical ingredients, high purity">
-    <link rel="canonical" id="productCanonical" href="https://www.windapharm.com/product-detail.html">
-    <link rel="stylesheet" href="css/style.css">
+    <title id="product-page-title">Product Detail - Winda Pharm</title>
+    <meta name="description" id="product-meta-desc" content="High quality pharmaceutical grade products from Winda Pharm.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Top Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span style="color: #3498DB;">Winda</span>
-                <span style="color: #2ECC71;">Pharm</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                            <li><a class="dropdown-item" href="products.html?category=steroid">Steroid Powder</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=testosterone">Testosterone Powder</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=trenbolone">Trenbolone Powder</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=nandrolone">Nandrolone Powder</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=boldenone">Boldenone Steroids</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=drostanolone">Drostanolone Powder</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=methenolone">Methenolone Powder</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=oral">Oral Steroid Powders</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=injectable">Injectable Steroids Oil</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=semi">Bulk Semi Steroid Oil</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=sarms">SARMs Powder</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=nootropics">Nootropics Powder</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=other">Other Pharma APIs</a></li>
-                            <li><a class="dropdown-item" href="products.html">All Products</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pure-steroid.html">Pure Steroid Powders</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="price.html">Product Prices</a>
-                    </li>
-                </ul>
+    <!-- Header Section -->
+    <header class="header sticky-top">
+        <!-- Top Bar -->
+        <div class="top-bar bg-dark py-1 d-none d-lg-block">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="text-white small me-3"><i class="fas fa-envelope me-1 opacity-75"></i> windaph@proton.me</span>
+                        <span class="text-white small"><i class="fab fa-whatsapp me-1 opacity-75"></i> +86 171 8678 5083</span>
+                    </div>
+                    <div>
+                         <a href="price.html" class="text-white small me-3 text-decoration-none top-bar-link"><i class="fas fa-tags me-1 opacity-75"></i> Pricing</a>
+                         <a href="news.html" class="text-white small text-decoration-none top-bar-link"><i class="fas fa-newspaper me-1 opacity-75"></i> News</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span style="color: #3498DB; font-weight: 700;">Winda</span><span style="color: #2ECC71; font-weight: 700;">Pharm</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="products.html" id="productsDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdownMenuLink">
+                                <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="products.html#testosterone">Testosterone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#trenbolone">Trenbolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#nandrolone">Nandrolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#boldenone">Boldenone Steroids</a></li>
+                                <li><a class="dropdown-item" href="products.html#drostanolone">Drostanolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#methenolone">Methenolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#oral">Oral Steroid Powders</a></li>
+                                <li><a class="dropdown-item" href="products.html#injectable">Injectable Steroids Oil</a></li>
+                                <li><a class="dropdown-item" href="products.html#bulk">Bulk Semi Steroid Oil</a></li>
+                                <li><a class="dropdown-item" href="products.html#sarms">Sarms powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#nootropics">Nootropics Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#apis">Other Pharma APIs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pure-steroid.html">Pure Steroid Powders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hgh-peptides.html">HGH & Peptides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="price.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="news.html">News</a>
+                        </li>
+                    </ul>
+                     <form class="d-flex ms-lg-3" action="search-results.html" method="get">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Search Products..." aria-label="Search" name="query">
+                        <button class="btn btn-outline-primary btn-sm" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- Page Header -->
     <div class="page-header">
@@ -77,94 +102,111 @@
     </div>
 
     <!-- Product Detail Section -->
-    <section class="product-detail-section py-5">
+    <section class="product-detail py-5">
         <div class="container">
             <div class="row">
-                <!-- Product Images -->
-                <div class="col-lg-6">
-                    <img src="images/products/testosterone-enanthate.jpg" alt="Testosterone Enanthate" class="img-fluid rounded shadow">
-                </div>
-                
-                <!-- Product Information -->
-                <div class="col-lg-6">
-                    <div class="product-info">
-                        <h1>Testosterone Enanthate</h1>
-                        <p class="lead">High-purity testosterone enanthate powder for muscle growth and performance enhancement.</p>
-                        <div class="product-meta mb-4">
-                            <span class="badge bg-primary">Purity: 99%+</span>
-                            <span class="badge bg-success">CAS: 315-37-7</span>
-                        </div>
-                        <h4>Product Description</h4>
-                        <p>Testosterone Enanthate is a high-quality steroid powder used for muscle growth, performance enhancement, and medical applications. It is known for its long-lasting effects and high purity, making it a popular choice among bodybuilders and athletes.</p>
-                        <h4>Key Features</h4>
-                        <ul>
-                            <li>High purity, over 99%</li>
-                            <li>Compliant with international pharmacopoeial standards</li>
-                            <li>Long-lasting effects</li>
-                            <li>Safe and reliable delivery</li>
-                        </ul>
-                        <h4>Applications</h4>
-                        <ul>
-                            <li>Muscle growth</li>
-                            <li>Performance enhancement</li>
-                            <li>Medical applications</li>
-                        </ul>
+                <div class="col-md-6 mb-4">
+                    <div class="product-image-container">
+                        <img id="product-image" src="" class="img-fluid rounded product-main-image" alt="">
                     </div>
                 </div>
-            </div>
-            
-            <!-- Technical Specifications -->
-            <div class="row mt-5">
-                <div class="col-lg-12">
-                    <div class="tech-specs">
-                        <h3>Technical Specifications</h3>
+                <div class="col-md-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                            <li id="product-category-crumb" class="breadcrumb-item"><a href="#"></a></li>
+                            <li id="product-name-crumb" class="breadcrumb-item active" aria-current="page"></li>
+                        </ol>
+                    </nav>
+                    
+                    <h1 id="product-name" class="mb-3"></h1>
+                    
+                    <div class="product-meta mb-3">
+                        <span id="product-cas" class="badge bg-primary me-2"></span>
+                        <span id="product-purity" class="badge bg-success"></span>
+                    </div>
+                    
+                    <div id="product-description" class="product-description mb-4"></div>
+                    
+                    <div class="specifications mb-4">
+                        <h4>Specifications</h4>
                         <table class="table table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th width="30%">Product Name</th>
-                                    <td id="specName">Loading...</td>
-                                </tr>
-                                <tr>
-                                    <th>CAS Number</th>
-                                    <td id="specCAS">Loading...</td>
-                                </tr>
-                                <tr>
-                                    <th>Molecular Formula</th>
-                                    <td id="specFormula">Loading...</td>
-                                </tr>
-                                <tr>
-                                    <th>Molecular Weight</th>
-                                    <td id="specWeight">Loading...</td>
-                                </tr>
-                                <tr>
-                                    <th>Appearance</th>
-                                    <td id="specAppearance">Loading...</td>
-                                </tr>
-                                <tr>
-                                    <th>Purity</th>
-                                    <td id="specPurity">Loading...</td>
-                                </tr>
-                                <tr>
-                                    <th>Storage</th>
-                                    <td id="specStorage">Store in a cool and dry place, away from light</td>
-                                </tr>
-                                <tr>
-                                    <th>Packaging</th>
-                                    <td id="specPackaging">100g, 1kg, or according to customer requirements</td>
-                                </tr>
+                            <tbody id="product-specs">
+                                <!-- 规格信息将通过JS动态填充 -->
                             </tbody>
                         </table>
                     </div>
+                    
+                    <div class="product-price-table mb-4">
+                        <h4>Pricing</h4>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Package</th>
+                                    <th>Price (USD)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="product-prices">
+                                <!-- 价格信息将通过JS动态填充 -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <a href="contact.html" class="btn btn-primary btn-lg me-2">Contact for Order</a>
+                        <a href="price.html" class="btn btn-outline-secondary btn-lg">Check All Prices</a>
+                    </div>
                 </div>
             </div>
             
-            <!-- Related Products -->
             <div class="row mt-5">
-                <div class="col-lg-12">
-                    <h3>Related Products</h3>
-                    <div class="row g-4" id="relatedProducts">
-                        <!-- Related products will be loaded dynamically by JavaScript -->
+                <div class="col-12">
+                    <div class="product-tabs">
+                        <ul class="nav nav-tabs" id="productTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button" role="tab">Details</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="usage-tab" data-bs-toggle="tab" data-bs-target="#usage" type="button" role="tab">Usage</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="shipping-tab" data-bs-toggle="tab" data-bs-target="#shipping" type="button" role="tab">Shipping</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content p-4 border border-top-0 rounded-bottom" id="productTabContent">
+                            <div class="tab-pane fade show active" id="details" role="tabpanel">
+                                <div id="product-details-content">
+                                    <!-- 详细内容将通过JS动态填充 -->
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="usage" role="tabpanel">
+                                <div id="product-usage-content">
+                                    <!-- 使用信息将通过JS动态填充 -->
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="shipping" role="tabpanel">
+                                <h4>Shipping Information</h4>
+                                <p>We offer discreet packaging and shipping to worldwide destinations, including domestic shipping to US, Canada, UK, and Europe.</p>
+                                <p>All products are professionally packaged to ensure safe delivery:</p>
+                                <ul>
+                                    <li>Discreet packaging with no indication of contents</li>
+                                    <li>Multiple shipping methods available</li>
+                                    <li>Tracking number provided for all shipments</li>
+                                    <li>Reshipment policy for lost packages</li>
+                                </ul>
+                                <p>For more shipping details, please <a href="contact.html">contact us</a>.</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            
+            <!-- 相关产品 -->
+            <div class="related-products mt-5">
+                <h3 class="mb-4">Related Products</h3>
+                <div class="row" id="related-products-container">
+                    <!-- 相关产品将通过JS动态填充 -->
                 </div>
             </div>
         </div>
@@ -219,45 +261,95 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="site-footer bg-dark text-secondary py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h5>Winda Pharm</h5>
-                    <p>Professional supplier of Active Pharmaceutical Ingredients (APIs), specializing in hormone steroid products and health-related products.</p>
+                <!-- Column 1: About -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">
+                         <span style="color: #3498DB; font-weight: 700;">Winda</span><span style="color: #2ECC71; font-weight: 700;">Pharm</span>
+                    </h5>
+                    <p class="small footer-about-text">
+                        Your reliable partner for high-quality Active Pharmaceutical Ingredients (APIs), specializing in hormone steroid products and innovative health solutions. Committed to purity and customer satisfaction.
+                    </p>
+                     <!-- Optional: Social Icons -->
+                     <!--
+                     <div class="footer-social mt-3">
+                         <a href="#" class="text-secondary me-2"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#" class="text-secondary me-2"><i class="fab fa-twitter"></i></a>
+                         <a href="#" class="text-secondary"><i class="fab fa-linkedin-in"></i></a>
+                     </div>
+                     -->
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Home</a></li>
-                        <li><a href="products.html" class="text-white">Products</a></li>
-                        <li><a href="pure-steroid.html" class="text-white">Pure Steroid Powders</a></li>
-                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
-                        <li><a href="price.html" class="text-white">Product Prices</a></li>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-white mb-3 footer-heading">Quick Links</h6>
+                    <ul class="list-unstyled small footer-links">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="products.html">Products</a></li>
+                        <li class="mb-2"><a href="pure-steroid.html">Pure Steroids</a></li>
+                        <li class="mb-2"><a href="hgh-peptides.html">HGH & Peptides</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h5>Contact Information</h5>
-                    <p><i class="fas fa-envelope me-2"></i> info@windapharm.com</p>
-                    <p><i class="fab fa-telegram me-2"></i> +86 171 8678 5083</p>
-                    <p><i class="fab fa-whatsapp me-2"></i> +86 171 8678 5083</p>
+
+                 <!-- Column 3: Support Links -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                     <h6 class="text-white mb-3 footer-heading">Support</h6>
+                     <ul class="list-unstyled small footer-links">
+                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                        <li class="mb-2"><a href="price.html">Pricing</a></li>
+                        <li class="mb-2"><a href="news.html">News & Updates</a></li>
+                        <!-- Add FAQ/Shipping links if available -->
+                        <!-- <li class="mb-2"><a href="faq.html">FAQ</a></li> -->
+                        <!-- <li class="mb-2"><a href="shipping.html">Shipping Info</a></li> -->
+                     </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-white mb-3 footer-heading">Contact Info</h6>
+                    <ul class="list-unstyled small footer-contact">
+                        <li class="d-flex mb-2">
+                            <i class="fas fa-envelope me-2 pt-1"></i>
+                            <span>windaph@proton.me</span>
+                        </li>
+                        <li class="d-flex mb-2">
+                             <i class="fab fa-whatsapp me-2 pt-1"></i>
+                             <span>+86 171 8678 5083</span>
+                         </li>
+                        <li class="d-flex mb-2">
+                            <i class="fab fa-telegram me-2 pt-1"></i>
+                            <span>+86 171 8678 5083</span>
+                        </li>
+                         <li class="d-flex">
+                            <i class="fas fa-map-marker-alt me-2 pt-1"></i>
+                            <span>Zhangjiang Hi-Tech Park, Shanghai, China</span> <!-- Shortened address -->
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <hr class="my-4">
-            <div class="text-center">
-                <p>&copy; 2023 Winda Pharm. All rights reserved.</p>
+
+            <hr class="footer-divider my-4">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="small copyright-text mb-0">
+                        &copy; <script>document.write(new Date().getFullYear());</script> Winda Pharmaceuticals Co.,Ltd. All Rights Reserved.
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Contact Us Floating Button -->
+    <!-- Contact Float Button -->
     <div class="contact-float">
         <button id="contactBtn" class="btn btn-primary rounded-circle">
             <i class="fas fa-comment-dots"></i>
         </button>
     </div>
 
-    <!-- Contact Us Floating Window -->
+    <!-- Contact Modal -->
     <div id="contactModal" class="contact-modal">
         <div class="contact-content">
             <div class="contact-header">
@@ -266,49 +358,18 @@
             </div>
             <div class="contact-body">
                 <p><i class="fas fa-building me-2"></i> <strong>Winda Pharm</strong></p>
-                <p><i class="fas fa-map-marker-alt me-2"></i> Address: Zhangjiang High-Tech Park, Pudong New Area, Shanghai</p>
+                <p><i class="fas fa-map-marker-alt me-2"></i> Address: Zhangjiang Hi-Tech Park, Pudong New Area, Shanghai</p>
                 <p><i class="fas fa-phone me-2"></i> Phone: +86 171 8678 5083</p>
-                <p><i class="fas fa-envelope me-2"></i> Email: info@windapharm.com</p>
-                <p><i class="fas fa-clock me-2"></i> Working Time: Monday to Friday 9:00-18:00</p>
+                <p><i class="fas fa-envelope me-2"></i> Email: windaph@proton.me</p>
+                <p><i class="fab fa-telegram me-2"></i> Telegram: <a href="https://t.me/Windapharm_bot" target="_blank">@Windapharm_bot</a></p>
+                <p><i class="fas fa-clock me-2"></i> Working Hours: Monday to Friday 9:00-18:00</p>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/products-data.js"></script>
     <script src="js/product-detail.js"></script>
-    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "<span id="jsonProductName">Product Name</span>",
-      "image": "<span id="jsonProductImage">Product Image URL</span>",
-      "description": "<span id="jsonProductDescription">Product Description</span>",
-      "brand": {
-        "@type": "Brand",
-        "name": "Winda Pharm"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "<span id="jsonProductUrl">Product URL</span>",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-    </script>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Get product data and update structured data
-        const product = products.find(p => p.id == productId);
-        if (product) {
-            document.getElementById('jsonProductName').textContent = product.name;
-            document.getElementById('jsonProductImage').textContent = window.location.origin + '/' + product.image;
-            document.getElementById('jsonProductDescription').textContent = product.description;
-            document.getElementById('jsonProductUrl').textContent = window.location.href;
-        }
-    });
-    </script>
+    <script src="js/script.js"></script> <!-- Ensure this script handles the button/modal -->
 </body>
 </html> 

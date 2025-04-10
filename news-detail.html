@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">News Detail - Winda Pharm</title>
+    <meta name="description" content="Latest news and updates from Winda Pharm - your trusted supplier of high quality steroid powders.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/ui/favicon.ico" type="image/x-icon">
+    <style>
+        /* 保持与首页一致的样式 */
+        #news-detail {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        #news-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+        #news-content p {
+            margin-bottom: 1.5rem;
+        }
+        #news-title {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 1.2rem;
+        }
+        .news-meta {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+        }
+        .back-to-news {
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .back-to-news:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header sticky-top">
+        <!-- Top Bar -->
+        <div class="top-bar bg-dark py-1 d-none d-lg-block">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="text-white small me-3"><i class="fas fa-envelope me-1 opacity-75"></i> windaph@proton.me</span>
+                        <span class="text-white small"><i class="fab fa-whatsapp me-1 opacity-75"></i> +86 171 8678 5083</span>
+                    </div>
+                    <div>
+                         <a href="price.html" class="text-white small me-3 text-decoration-none top-bar-link"><i class="fas fa-tags me-1 opacity-75"></i> Pricing</a>
+                         <a href="news.html" class="text-white small text-decoration-none top-bar-link"><i class="fas fa-newspaper me-1 opacity-75"></i> News</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span style="color: #3498DB; font-weight: 700;">Winda</span><span style="color: #2ECC71; font-weight: 700;">Pharm</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="products.html" id="productsDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdownMenuLink">
+                                <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="products.html#testosterone">Testosterone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#trenbolone">Trenbolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#nandrolone">Nandrolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#boldenone">Boldenone Steroids</a></li>
+                                <li><a class="dropdown-item" href="products.html#drostanolone">Drostanolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#methenolone">Methenolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#oral">Oral Steroid Powders</a></li>
+                                <li><a class="dropdown-item" href="products.html#injectable">Injectable Steroids Oil</a></li>
+                                <li><a class="dropdown-item" href="products.html#bulk">Bulk Semi Steroid Oil</a></li>
+                                <li><a class="dropdown-item" href="products.html#sarms">Sarms powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#nootropics">Nootropics Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#apis">Other Pharma APIs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pure-steroid.html">Pure Steroid Powders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hgh-peptides.html">HGH & Peptides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="price.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link active" href="news.html">News</a>
+                        </li>
+                    </ul>
+                     <form class="d-flex ms-lg-3" action="search-results.html" method="get">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Search Products..." aria-label="Search" name="query">
+                        <button class="btn btn-outline-primary btn-sm" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 页面标题 -->
+    <div class="page-header">
+        <div class="container">
+            <h1 id="news-title">News Detail</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="news.html">News</a></li>
+                    <li class="breadcrumb-item active" id="breadcrumb-title" aria-current="page">News Detail</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 新闻详情内容 -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="news-detail mb-4">
+                        <div class="mb-3 text-muted">
+                            <span id="news-date">2023-04-08</span>
+                        </div>
+                        
+                        <div id="news-content" class="article-content">
+                            <!-- 内容将通过JavaScript动态加载 -->
+                        </div>
+                    </div>
+                    
+                    <!-- 返回按钮 -->
+                    <div class="mt-4 mb-5">
+                        <a href="index.html" class="btn btn-outline-primary back-to-news">
+                            <i class="fas fa-arrow-left me-2"></i> Back to Home
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 侧边栏 -->
+                <div class="col-lg-4">
+                    <!-- 产品分类 -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0">CATEGORIES</h4>
+                        </div>
+                        <div class="card-body p-0">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="products.html?category=steroid" class="text-dark text-decoration-none">Steroid powder</a></li>
+                                <li class="list-group-item"><a href="products.html?category=testosterone" class="text-dark text-decoration-none">Testosterone Powder</a></li>
+                                <li class="list-group-item"><a href="products.html?category=trenbolone" class="text-dark text-decoration-none">Trenbolone Powder</a></li>
+                                <li class="list-group-item"><a href="products.html?category=nandrolone" class="text-dark text-decoration-none">Nandrolone Powder</a></li>
+                                <li class="list-group-item"><a href="products.html?category=boldenone" class="text-dark text-decoration-none">Boldenone Steroids</a></li>
+                                <li class="list-group-item"><a href="products.html?category=drostanolone" class="text-dark text-decoration-none">Drostanolone Powder</a></li>
+                                <li class="list-group-item"><a href="products.html?category=methenolone" class="text-dark text-decoration-none">Methenolone Powder</a></li>
+                                <li class="list-group-item"><a href="products.html?category=oral" class="text-dark text-decoration-none">Oral Steroid Powders</a></li>
+                                <li class="list-group-item"><a href="products.html?category=injectable" class="text-dark text-decoration-none">Injectable Steroids Oil</a></li>
+                                <li class="list-group-item"><a href="products.html?category=semi" class="text-dark text-decoration-none">Bulk Semi Steroid Oil</a></li>
+                                <li class="list-group-item"><a href="products.html?category=sarms" class="text-dark text-decoration-none">Sarms powder</a></li>
+                                <li class="list-group-item"><a href="products.html?category=nootropics" class="text-dark text-decoration-none">Nootropics Powder</a></li>
+                                <li class="list-group-item"><a href="products.html?category=other" class="text-dark text-decoration-none">Other Pharma APIs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- 最近新闻 -->
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0">NEWS</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex mb-3">
+                                    <a href="news-detail.html?id=1" class="text-dark text-decoration-none">Heads Up: MSN Pharma is Fake !!!!…2023-04-08</a>
+                                </li>
+                                <li class="d-flex mb-3">
+                                    <a href="news-detail.html?id=2" class="text-dark text-decoration-none">steroid powder price list 2023…2021-04-01</a>
+                                </li>
+                                <li class="d-flex mb-3">
+                                    <a href="news-detail.html?id=3" class="text-dark text-decoration-none">US and Canada Domestic Shipping Available…2020-07-27</a>
+                                </li>
+                                <li class="d-flex mb-3">
+                                    <a href="news-detail.html?id=4" class="text-dark text-decoration-none">EUROPE Domestic Shipping Available…2020-06-17</a>
+                                </li>
+                                <li class="d-flex mb-3">
+                                    <a href="news-detail.html?id=5" class="text-dark text-decoration-none">Buy Steroid Powder With Bitcoin from China ?…2017-12-29</a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="news-detail.html?id=6" class="text-dark text-decoration-none">BITCOIN GUIDE…2018-03-07</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer bg-dark text-secondary py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: About -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">
+                         <span style="color: #3498DB; font-weight: 700;">Winda</span><span style="color: #2ECC71; font-weight: 700;">Pharm</span>
+                    </h5>
+                    <p class="small footer-about-text">
+                        Your reliable partner for high-quality Active Pharmaceutical Ingredients (APIs), specializing in hormone steroid products and innovative health solutions. Committed to purity and customer satisfaction.
+                    </p>
+                     <!-- Optional: Social Icons -->
+                     <!--
+                     <div class="footer-social mt-3">
+                         <a href="#" class="text-secondary me-2"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#" class="text-secondary me-2"><i class="fab fa-twitter"></i></a>
+                         <a href="#" class="text-secondary"><i class="fab fa-linkedin-in"></i></a>
+                     </div>
+                     -->
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-white mb-3 footer-heading">Quick Links</h6>
+                    <ul class="list-unstyled small footer-links">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="products.html">Products</a></li>
+                        <li class="mb-2"><a href="pure-steroid.html">Pure Steroids</a></li>
+                        <li class="mb-2"><a href="hgh-peptides.html">HGH & Peptides</a></li>
+                    </ul>
+                </div>
+
+                 <!-- Column 3: Support Links -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                     <h6 class="text-white mb-3 footer-heading">Support</h6>
+                     <ul class="list-unstyled small footer-links">
+                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                        <li class="mb-2"><a href="price.html">Pricing</a></li>
+                        <li class="mb-2"><a href="news.html">News & Updates</a></li>
+                        <!-- Add FAQ/Shipping links if available -->
+                        <!-- <li class="mb-2"><a href="faq.html">FAQ</a></li> -->
+                        <!-- <li class="mb-2"><a href="shipping.html">Shipping Info</a></li> -->
+                     </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-white mb-3 footer-heading">Contact Info</h6>
+                    <ul class="list-unstyled small footer-contact">
+                        <li class="d-flex mb-2">
+                            <i class="fas fa-envelope me-2 pt-1"></i>
+                            <span>windaph@proton.me</span>
+                        </li>
+                        <li class="d-flex mb-2">
+                             <i class="fab fa-whatsapp me-2 pt-1"></i>
+                             <span>+86 171 8678 5083</span>
+                         </li>
+                        <li class="d-flex mb-2">
+                            <i class="fab fa-telegram me-2 pt-1"></i>
+                            <span>+86 171 8678 5083</span>
+                        </li>
+                         <li class="d-flex">
+                            <i class="fas fa-map-marker-alt me-2 pt-1"></i>
+                            <span>Zhangjiang Hi-Tech Park, Shanghai, China</span> <!-- Shortened address -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider my-4">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="small copyright-text mb-0">
+                        &copy; <script>document.write(new Date().getFullYear());</script> Winda Pharmaceuticals Co.,Ltd. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Float Button -->
+    <div class="contact-float">
+        <button id="contactBtn" class="btn btn-primary rounded-circle">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h4>Contact Us</h4>
+                <button id="closeContactBtn" class="btn-close"></button>
+            </div>
+            <div class="contact-body">
+                <p><i class="fas fa-building me-2"></i> <strong>Winda Pharm</strong></p>
+                <p><i class="fas fa-map-marker-alt me-2"></i> Address: Zhangjiang Hi-Tech Park, Pudong New Area, Shanghai</p>
+                <p><i class="fas fa-phone me-2"></i> Phone: +86 171 8678 5083</p>
+                <p><i class="fas fa-envelope me-2"></i> Email: windaph@proton.me</p>
+                <p><i class="fab fa-telegram me-2"></i> Telegram: <a href="https://t.me/Windapharm_bot" target="_blank">@Windapharm_bot</a></p>
+                <p><i class="fas fa-clock me-2"></i> Working Hours: Monday to Friday 9:00-18:00</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script> <!-- Ensure this script handles the button/modal -->
+    <script>
+        // 获取URL参数
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+        
+        // 新闻数据库
+        const newsData = {
+            '1': {
+                title: 'Heads Up: MSN Pharma is Fake !!!!',
+                date: '2023-04-08',
+                content: `<p>We want to inform all our customers that MSN Pharma is a fake company that has been using our product images and descriptions without permission.</p>
+                    <p>Please be cautious of scammers and always verify the authenticity of suppliers before making any purchases. We at Winda Pharm are committed to providing high-quality steroid products and ensuring customer satisfaction.</p>
+                    <p>If you have any questions or concerns, please feel free to contact us directly through our official communication channels mentioned on our website.</p>
+                    <p>Stay safe and choose reliable suppliers for your steroid powder needs.</p>`
+            },
+            '2': {
+                title: 'steroid powder price list 2023',
+                date: '2021-04-01',
+                content: `<p>We have updated our steroid powder price list for 2023. Please refer to our <a href="price.html">Price Page</a> for the most current pricing information.</p>
+                    <p>Our prices are competitive while maintaining the highest quality standards in the industry. Bulk orders qualify for special discounts. Contact our sales team for more information on volume pricing.</p>`
+            },
+            '3': {
+                title: 'US and Canada Domestic Shipping Available',
+                date: '2020-07-27',
+                content: `<p>We are pleased to announce that we now offer domestic shipping within the US and Canada. This means faster delivery times, reduced shipping costs, and lower risk for our customers in these regions.</p>
+                    <p>Please contact our customer service team for more details on domestic shipping options and availability.</p>`
+            },
+            '4': {
+                title: 'EUROPE Domestic Shipping Available',
+                date: '2020-06-17',
+                content: `<p>Good news for our European customers! We now offer domestic shipping within Europe. This service is available for most European countries, ensuring faster and safer delivery of your orders.</p>
+                    <p>For more information on countries covered and shipping details, please contact our sales team.</p>`
+            },
+            '5': {
+                title: 'Buy Steroid Powder With Bitcoin from China ?',
+                date: '2017-12-29',
+                content: `<p>Many customers ask about using Bitcoin for purchases from China. Yes, we accept Bitcoin as a payment method for all our products.</p>
+                    <p>Using Bitcoin offers several advantages including:</p>
+                    <ul>
+                        <li>Enhanced privacy and security</li>
+                        <li>Lower transaction fees</li>
+                        <li>Faster international transactions</li>
+                    </ul>
+                    <p>If you're new to Bitcoin, check out our <a href="news-detail.html?id=6">Bitcoin Guide</a> for more information on how to use this payment method.</p>`
+            },
+            '6': {
+                title: 'BITCOIN GUIDE',
+                date: '2018-03-07',
+                content: `<h3>How to Use Bitcoin for Your Purchases</h3>
+                    <p>This guide explains how to use Bitcoin to make purchases with us:</p>
+                    <ol>
+                        <li>Set up a Bitcoin wallet (we recommend Coinbase, Binance, or Kraken for beginners)</li>
+                        <li>Purchase Bitcoin through your chosen exchange</li>
+                        <li>When placing an order with us, select Bitcoin as your payment method</li>
+                        <li>Transfer the exact amount to the Bitcoin address we provide</li>
+                        <li>Send us the transaction ID once the payment is complete</li>
+                    </ol>
+                    <p>For any questions about Bitcoin payments, please contact our customer service team.</p>`
+            },
+            '7': {
+                title: 'A guide to Anavar -Oxandrolone',
+                date: '2017-05-19',
+                content: `<h3>Understanding Anavar (Oxandrolone)</h3>
+                    <p>Anavar, also known as Oxandrolone, is a popular oral anabolic steroid that is known for its mild nature and minimal side effects compared to other steroids.</p>
+                    <h4>Key characteristics:</h4>
+                    <ul>
+                        <li>Mild androgenic properties</li>
+                        <li>Promotes lean muscle growth</li>
+                        <li>Enhances strength without significant weight gain</li>
+                        <li>Used in both cutting and bulking cycles</li>
+                        <li>Popular among both male and female athletes</li>
+                    </ul>
+                    <p>For more information about our Anavar powder, please visit our <a href="products.html?category=oral">Products page</a>.</p>`
+            }
+        };
+
+        // 页面加载时获取并显示新闻内容
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsId = getParameterByName('id') || '1';
+            const news = newsData[newsId] || {
+                title: 'News not found',
+                date: '',
+                content: '<p>The requested news article could not be found.</p>'
+            };
+            
+            // 更新页面标题
+            document.getElementById('page-title').textContent = news.title + ' - Winda Pharm';
+            document.getElementById('news-title').textContent = news.title;
+            document.getElementById('breadcrumb-title').textContent = news.title;
+            
+            // 更新新闻日期
+            document.getElementById('news-date').textContent = news.date;
+            
+            // 更新新闻内容
+            document.getElementById('news-content').innerHTML = news.content;
+            
+            // 高亮当前新闻在侧边栏的链接
+            const allNewsLinks = document.querySelectorAll('.card-body a');
+            allNewsLinks.forEach(link => {
+                const linkId = getParameterByName('id', link.href);
+                if (linkId === newsId) {
+                    link.style.fontWeight = 'bold';
+                    link.style.color = '#3498DB';
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

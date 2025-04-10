@@ -3,59 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Prices - Winda Pharm | Competitive Pricing for Steroid Powders</title>
-    <meta name="description" content="View our competitive pricing for high-quality steroid powders and APIs. Winda Pharm offers transparent pricing with flexible MOQs.">
-    <meta name="keywords" content="steroid powder prices, API pricing, competitive pricing">
-    <link rel="canonical" href="https://www.windapharm.com/price.html">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Steroid Powder Price - Winda Pharm</title>
+    <meta name="description" content="Check our competitive pricing for high quality steroid powders, SARMs, and other pharmaceutical products.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/ui/favicon.ico" type="image/x-icon">
+    <style>
+        .price-list {
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .price-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .price-text {
+            white-space: pre-line;
+        }
+        
+        .price-intro, .price-list {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 <body>
-    <!-- Top Navigation Bar (Same as index.html) -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span style="color: #3498DB;">Winda</span>
-                <span style="color: #2ECC71;">Pharm</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                            <li><a class="dropdown-item" href="products.html?category=hormone">Hormone Steroids</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=testosterone">Testosterone Products</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=trenbolone">Trenbolone Products</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=nandrolone">Nandrolone Products</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=cosmetic">Cosmetic Additives</a></li>
-                            <li><a class="dropdown-item" href="products.html?category=health">Health Products</a></li>
-                            <li><a class="dropdown-item" href="products.html">All Products</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pure-steroid.html">Pure Steroid Powders</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="price.html">Product Prices</a>
-                    </li>
-                </ul>
+    <!-- Header Section -->
+    <header class="header sticky-top">
+        <!-- Top Bar -->
+        <div class="top-bar bg-dark py-1 d-none d-lg-block">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="text-white small me-3"><i class="fas fa-envelope me-1 opacity-75"></i> windaph@proton.me</span>
+                        <span class="text-white small"><i class="fab fa-whatsapp me-1 opacity-75"></i> +86 171 8678 5083</span>
+                    </div>
+                    <div>
+                         <a href="price.html" class="text-white small me-3 text-decoration-none top-bar-link"><i class="fas fa-tags me-1 opacity-75"></i> Pricing</a>
+                         <a href="news.html" class="text-white small text-decoration-none top-bar-link"><i class="fas fa-newspaper me-1 opacity-75"></i> News</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span style="color: #3498DB; font-weight: 700;">Winda</span><span style="color: #2ECC71; font-weight: 700;">Pharm</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="products.html" id="productsDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdownMenuLink">
+                                <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="products.html#testosterone">Testosterone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#trenbolone">Trenbolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#nandrolone">Nandrolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#boldenone">Boldenone Steroids</a></li>
+                                <li><a class="dropdown-item" href="products.html#drostanolone">Drostanolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#methenolone">Methenolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#oral">Oral Steroid Powders</a></li>
+                                <li><a class="dropdown-item" href="products.html#injectable">Injectable Steroids Oil</a></li>
+                                <li><a class="dropdown-item" href="products.html#bulk">Bulk Semi Steroid Oil</a></li>
+                                <li><a class="dropdown-item" href="products.html#sarms">Sarms powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#nootropics">Nootropics Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#apis">Other Pharma APIs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pure-steroid.html">Pure Steroid Powders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hgh-peptides.html">HGH & Peptides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="price.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="news.html">News</a>
+                        </li>
+                    </ul>
+                     <form class="d-flex ms-lg-3" action="search-results.html" method="get">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Search Products..." aria-label="Search" name="query">
+                        <button class="btn btn-outline-primary btn-sm" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Page Header -->
+    <!-- 页面标题 -->
     <div class="page-header">
         <div class="container">
             <h1>Steroid Powder Price</h1>
@@ -68,362 +123,219 @@
         </div>
     </div>
 
-    <!-- Price List Section -->
-    <section class="price-section py-5">
+    <!-- 价格列表内容 -->
+    <section class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="price-category mb-5">
-                        <h2 class="price-category-title">Hormone Steroid Prices</h2>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th style="width: 60%;">Product Name</th>
-                                        <th style="width: 40%;">Price (USD)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Testosterone Base</td>
-                                        <td>$145/100g, $450/500g, $700/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Testosterone Propionate</td>
-                                        <td>$135/100g, $400/500g, $630/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Testosterone Enanthate</td>
-                                        <td>$135/100g, $400/500g, $630/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Testosterone Cypionate</td>
-                                        <td>$135/100g, $400/500g, $630/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Testosterone Sustanon</td>
-                                        <td>$185/100g, $550/500g, $950/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Testosterone Phenylpropionate</td>
-                                        <td>$135/100g, $400/500g, $630/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Testosterone Decanoate</td>
-                                        <td>$135/100g, $400/500g, $630/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Testosterone Acetate</td>
-                                        <td>$135/100g, $400/500g, $630/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>17-Methyltestosterone</td>
-                                        <td>$150/100g, $500/500g, $800/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1-Testosterone Cypionate (DHB)</td>
-                                        <td>$490/100g, $1950/500g, $3500/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Testosterone Undecanoate</td>
-                                        <td>$180/100g, $580/500g, $900/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Testosterone Isocaproate</td>
-                                        <td>$260/100g, $700/500g, $1200/1kg</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="price-intro mb-4">
+                        <h2 class="price-title">Winda Pharm Steroid Powder Price list (US Dollars)</h2>
+                        <div class="price-subtitle mb-3">
+                            <strong>Domestic Shipping to USA, Canada, UK, EUROPE</strong>
                         </div>
-                    </div>                
+                    </div>
+                    
+                    <div class="price-list">
+                        <div class="price-text">
+Testosterone Base $145/100g, $450/500g, $700/1kg 
 
-                    <div class="price-category mb-5">
-                        <h2 class="price-category-title">Nandrolone Steroid Prices</h2>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Product Name</th>
-                                        <th>Price (USD)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Nandrolone Decanoate</td>
-                                        <td>$260/100g, $1150/500g, $1900/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nandrolone Phenylpropionate</td>
-                                        <td>$260/100g, $1150/500g, $1900/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nandrolone Propionate</td>
-                                        <td>$270/100g, $1150/500g, $2000/1kg</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+Testosterone Propionate $135/100g, $400/500g, $630/1kg  
+Testosterone enanthate $135/100g, $400/500g, $630/1kg  
+
+Testosterone Cypionate $135/100g, $400/500g, $630/1kg 
+
+Testosterone Sustanon $185/100g, $550/500g, $950/1kg  
+Testosterone Phenylpropionate $135/100g, $400/500g, $630/1kg  
+Testosterone Decanoate $135/100g, $400/500g, $630/1kg  
+Testosterone Acetate $135/100g, $400/500g, $630/1kg  
+17-Methyltestosterone $150/100g, $500/500g, $800/1kg  
+1-Testosterone Cypionate (DHB) $490/100g, $1950/500g, $3500/1kg  
+Testosterone Undecanoate $180/100g, $580/500g, $900/1kg  
+Testosterone Isocaproate $260/100g, $700/500g, $1200/1kg  
+
+11-OXO (Adrenosterone) $390/100g, $1500/500g, $2700/1kg 
+
+  
+Boldenone Base $245/100g, $900/500g, $1500/1kg  
+Boldenone Undecylenate $225/100g, $800/500g, $1300/1kg  
+Boldenone Cypionate $225/100g, $800/500g, $1300/1kg  
+Boldenone Acetate $225/100g, $800/500g, $1300/1kg  
+Nandrolone Decanoate $260/100g, $1150/500g, $1900/1kg  
+Nandrolone Phenylpropionate $260/100g, $1150/500g, $1900/1kg  
+Nandrolone Propionate $270/100g, $1150/500g, $2000/1kg  
+Drostanolone Propionate $600/100g, $2200/500g, $4050/1kg  
+Drostanolone Enanthate $600/100g, $2220/500g, $4050/1kg  
+Trenbolone acetate $560/100g, $2050/500g, $3950/1kg  
+Trenbolone Enanthate $560/100g, $2050/500g, $3950/1kg  
+Trenbolone Hex(Parabolan) $1400/100g, $5400/500g, $10200/1kg  
+Methenolone Acetate $1450/100g, $5500/500g, $10500/1kg  
+Methenolone Enanthate $1450/100g, $5500/500g, $10500/1kg 
+
+  
+Oxymetholone (Anadrol) $220/100g, $900/500g, $1700/1kg  
+Stanozolol (Winstrol) $220/100g, $900/500g, $1700/1kg  
+Mesterolone (Proviron) $600/100g, $2100/500g, $4000/1kg  
+Oral Turinabol $550/100g, $2000/500g, $3800/1kg  
+Oxandrolone (Anavar) $580/100g, $2100/500g, $3900/1kg  
+Fluoxymesterone (Halotestin) $460/10g, $1600/50g, $3000/100g  
+Methandrostenolone (Dianabol) $220/100g, $900/500g, $1700/1kg  
+Methyldrostanolone (Superdrol) $550/100g, $2000/500g, $3800/1kg  
+Trestolone acetate (MENT) $1500/50g, $2800/100g, $11,200/500g  
+
+  
+Dymethazine (DMZ) $580/100g, $2100/500g, $3900/1kg  
+Hexadrone $260/100g, $900/500g, $1500/1kg  
+T3 Thyroid (Liothyroninesodium) $900/50g, $1500/100g, $6800/500g  
+Tamoxifen Citrate(Novadex) $150/100g, $500/500g, $900/1kg  
+Clomiphene Citrate(Clomid) $180/100g, $700/500g, $1250/1kg  
+Arimistane $350/100g, $1250/500g, $2000/1kg  
+Anastrozole (Arimidex) $900/100g, $3200/500g, $6000/1kg  
+Letrozole (Femara) $250/100g, $900/500g, $1650/1kg  
+Exemestane (Aromasin) $750/100g, $2800/500g, $4900/1kg  
+
+  
+Estriol $680/100g, $2300/500g $4200/1kg  
+Sildenafil Citrate (Viagra) $110/100g, $290/500g, $480/1kg  
+Tadalafil (Cialis) $180/100g, $500/500g, $800/1kg  
+Dapoxetine HCL $260/100g, $900/500g, $1600/1kg  
+Vardenafil $380/100g, $1350/500g, $2100/1kg  
+DL-Lorcaserin HCl (LorcaserinHydrochloride) $1200/1kg  
+Phenacetin $950/10kg, $3500/50kg, $4900/100kg  
+Lidocaine $255/1kg, $950/10kg, $3200/50kg  
+Noopept $290/500g, $480/1kg, $3600/10kg  
+Piracetam $170/1kg, $950/10kg, $1900/25kg  
+Magnesium Taurate $260/kg, $1600/10kg  
+Pregabalin $300/500g, $600/1kg  
                         </div>
                     </div>
                     
-                    <div class="price-category mb-5">
-                        <h2 class="price-category-title">Boldenone Steroid Prices</h2>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Product Name</th>
-                                        <th>Price (USD)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Boldenone Base</td>
-                                        <td>$245/100g, $900/500g, $1500/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Boldenone Undecylenate</td>
-                                        <td>$225/100g, $800/500g, $1300/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Boldenone Cypionate</td>
-                                        <td>$225/100g, $800/500g, $1300/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Boldenone Acetate</td>
-                                        <td>$225/100g, $800/500g, $1300/1kg</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="price-list">
+                        <div class="price-title">China SARMs Powder Price</div>
+                        <div class="price-text">
+MK2866 $390/100g, $1750/500g, $2900/1kg  
+S4 $480/100g, $1850/500g, $3100/1kg  
+S-23 $700/100g, $2400/500g, $4300/1kg  
+MK-677 $900/100g, $3650/500g, $6400/1kg  
+LGD-4033 $850/100g, $3500/500g, $500/1kg  
+RAD-140 $900/50g, $1500/100g, $5800/500g, $11400/1kg  
+SR-9009 $900/50g, $1500/100g, $5800/500g, $11400/1kg  
+GW-0742 $1000/50g, $1800/100g, $6200/500g, $12000/1kg  
+YK-11 $1100/50g, $1900/100g, $8000/500g  
                         </div>
-                    </div>
-                    
-                    <div class="price-category mb-5">
-                        <h2 class="price-category-title">Trenbolone Steroid Prices</h2>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Product Name</th>
-                                        <th>Price (USD)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Trenbolone Acetate</td>
-                                        <td>$560/100g, $2050/500g, $3950/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trenbolone Enanthate</td>
-                                        <td>$560/100g, $2050/500g, $3950/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trenbolone Hex (Parabolan)</td>
-                                        <td>$1400/100g, $5400/500g, $10200/1kg</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    
-                    <div class="price-category mb-5">
-                        <h2 class="price-category-title">Oral Steroid Prices</h2>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Product Name</th>
-                                        <th>Price (USD)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Oxymetholone (Anadrol)</td>
-                                        <td>$220/100g, $900/500g, $1700/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Stanozolol (Winstrol)</td>
-                                        <td>$220/100g, $900/500g, $1700/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mesterolone (Proviron)</td>
-                                        <td>$600/100g, $2100/500g, $4000/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Oral Turinabol</td>
-                                        <td>$550/100g, $2000/500g, $3800/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Oxandrolone (Anavar)</td>
-                                        <td>$580/100g, $2100/500g, $3900/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fluoxymesterone (Halotestin)</td>
-                                        <td>$460/10g, $1600/50g, $3000/100g</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Methandrostenolone (Dianabol)</td>
-                                        <td>$220/100g, $900/500g, $1700/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Methyldrostanolone (Superdrol)</td>
-                                        <td>$550/100g, $2000/500g, $3800/1kg</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    
-                    <div class="price-category mb-5">
-                        <h2 class="price-category-title">SARMs Prices</h2>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Product Name</th>
-                                        <th>Price (USD)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>MK2866 (Ostarine)</td>
-                                        <td>$390/100g, $1750/500g, $2900/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>S4 (Andarine)</td>
-                                        <td>$480/100g, $1850/500g, $3100/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>S-23</td>
-                                        <td>$700/100g, $2400/500g, $4300/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MK-677 (Ibutamoren)</td>
-                                        <td>$900/100g, $3650/500g, $6400/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LGD-4033 (Ligandrol)</td>
-                                        <td>$850/100g, $3500/500g, $5000/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>RAD-140</td>
-                                        <td>$900/50g, $1500/100g, $5800/500g, $11400/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>SR-9009</td>
-                                        <td>$900/50g, $1500/100g, $5800/500g, $11400/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>GW-0742</td>
-                                        <td>$1000/50g, $1800/100g, $6200/500g, $12000/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>YK-11</td>
-                                        <td>$1100/50g, $1900/100g, $8000/500g, $15000/1kg</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    
-                    <div class="price-category mb-5">
-                        <h2 class="price-category-title">Other Product Prices</h2>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Product Name</th>
-                                        <th>Price (USD)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Tamoxifen Citrate (Nolvadex)</td>
-                                        <td>$150/100g, $500/500g, $900/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Clomiphene Citrate (Clomid)</td>
-                                        <td>$180/100g, $700/500g, $1250/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Anastrozole (Arimidex)</td>
-                                        <td>$900/100g, $3200/500g, $6000/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Letrozole (Femara)</td>
-                                        <td>$250/100g, $900/500g, $1650/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Exemestane (Aromasin)</td>
-                                        <td>$750/100g, $2800/500g, $4900/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sildenafil Citrate (Viagra)</td>
-                                        <td>$110/100g, $290/500g, $480/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tadalafil (Cialis)</td>
-                                        <td>$180/100g, $500/500g, $800/1kg</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dapoxetine HCL</td>
-                                        <td>$260/100g, $900/500g, $1600/1kg</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    
-                    <div class="price-note alert alert-info">
-                        <h3>Price Note</h3>
-                        <p>The prices listed above are reference prices and may vary based on order quantity and market changes. For the most accurate and up-to-date pricing information, please contact our sales team.</p>
-                        <p>Minimum Order Quantity (MOQ) may be adjusted for larger orders. All products come with a Certificate of Analysis (COA) upon request.</p>
-                        <a href="contact.html" class="btn btn-primary mt-2">Contact For Pricing</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (Same as index.html) -->
-    <footer class="bg-dark text-white py-4">
+    <!-- Footer -->
+    <footer class="site-footer bg-dark text-secondary py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h5>Winda Pharm</h5>
-                    <p>Professional supplier of Active Pharmaceutical Ingredients (APIs), specializing in hormone steroid products and health-related products.</p>
+                <!-- Column 1: About -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">
+                         <span style="color: #3498DB; font-weight: 700;">Winda</span><span style="color: #2ECC71; font-weight: 700;">Pharm</span>
+                    </h5>
+                    <p class="small footer-about-text">
+                        Your reliable partner for high-quality Active Pharmaceutical Ingredients (APIs), specializing in hormone steroid products and innovative health solutions. Committed to purity and customer satisfaction.
+                    </p>
+                     <!-- Optional: Social Icons -->
+                     <!--
+                     <div class="footer-social mt-3">
+                         <a href="#" class="text-secondary me-2"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#" class="text-secondary me-2"><i class="fab fa-twitter"></i></a>
+                         <a href="#" class="text-secondary"><i class="fab fa-linkedin-in"></i></a>
+                     </div>
+                     -->
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Home</a></li>
-                        <li><a href="products.html" class="text-white">Products</a></li>
-                        <li><a href="pure-steroid.html" class="text-white">Pure Steroid Powders</a></li>
-                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
-                        <li><a href="price.html" class="text-white">Product Prices</a></li>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-white mb-3 footer-heading">Quick Links</h6>
+                    <ul class="list-unstyled small footer-links">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="products.html">Products</a></li>
+                        <li class="mb-2"><a href="pure-steroid.html">Pure Steroids</a></li>
+                        <li class="mb-2"><a href="hgh-peptides.html">HGH & Peptides</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h5>Contact Information</h5>
-                    <p><i class="fas fa-envelope me-2"></i> info@windapharm.com</p>
-                    <p><i class="fab fa-telegram me-2"></i> +86 171 8678 5083</p>
-                    <p><i class="fab fa-whatsapp me-2"></i> +86 171 8678 5083</p>
+
+                 <!-- Column 3: Support Links -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                     <h6 class="text-white mb-3 footer-heading">Support</h6>
+                     <ul class="list-unstyled small footer-links">
+                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                        <li class="mb-2"><a href="price.html">Pricing</a></li>
+                        <li class="mb-2"><a href="news.html">News & Updates</a></li>
+                        <!-- Add FAQ/Shipping links if available -->
+                        <!-- <li class="mb-2"><a href="faq.html">FAQ</a></li> -->
+                        <!-- <li class="mb-2"><a href="shipping.html">Shipping Info</a></li> -->
+                     </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-white mb-3 footer-heading">Contact Info</h6>
+                    <ul class="list-unstyled small footer-contact">
+                        <li class="d-flex mb-2">
+                            <i class="fas fa-envelope me-2 pt-1"></i>
+                            <span>windaph@proton.me</span>
+                        </li>
+                        <li class="d-flex mb-2">
+                             <i class="fab fa-whatsapp me-2 pt-1"></i>
+                             <span>+86 171 8678 5083</span>
+                         </li>
+                        <li class="d-flex mb-2">
+                            <i class="fab fa-telegram me-2 pt-1"></i>
+                            <span>+86 171 8678 5083</span>
+                        </li>
+                         <li class="d-flex">
+                            <i class="fas fa-map-marker-alt me-2 pt-1"></i>
+                            <span>Zhangjiang Hi-Tech Park, Shanghai, China</span> <!-- Shortened address -->
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <hr class="my-4">
-            <div class="text-center">
-                <p>&copy; 2023 Winda Pharm. All rights reserved.</p>
+
+            <hr class="footer-divider my-4">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="small copyright-text mb-0">
+                        &copy; <script>document.write(new Date().getFullYear());</script> Winda Pharmaceuticals Co.,Ltd. All Rights Reserved.
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Contact Float Button & Modal (Same as index.html) -->
+    <!-- Contact Float Button -->
     <div class="contact-float">
         <button id="contactBtn" class="btn btn-primary rounded-circle">
             <i class="fas fa-comment-dots"></i>
         </button>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- Contact Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h4>Contact Us</h4>
+                <button id="closeContactBtn" class="btn-close"></button>
+            </div>
+            <div class="contact-body">
+                <p><i class="fas fa-building me-2"></i> <strong>Winda Pharm</strong></p>
+                <p><i class="fas fa-map-marker-alt me-2"></i> Address: Zhangjiang Hi-Tech Park, Pudong New Area, Shanghai</p>
+                <p><i class="fas fa-phone me-2"></i> Phone: +86 171 8678 5083</p>
+                <p><i class="fas fa-envelope me-2"></i> Email: windaph@proton.me</p>
+                <p><i class="fab fa-telegram me-2"></i> Telegram: <a href="https://t.me/Windapharm_bot" target="_blank">@Windapharm_bot</a></p>
+                <p><i class="fas fa-clock me-2"></i> Working Hours: Monday to Friday 9:00-18:00</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script> <!-- Ensure this script handles the button/modal -->
 </body>
 </html> 
