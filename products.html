@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Winda Pharm</title>
-    <meta name="description" content="Explore Winda Pharm's comprehensive range of high-quality steroid powders, peptides, SARMs and pharmaceutical ingredients for bodybuilding and health enhancement.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>All Products - WindaPharm</title>
+    <meta name="description" content="Complete catalog of high quality steroid powders, peptides, SARMs and pharmaceutical APIs">
+    <meta name="keywords" content="steroid powder, testosterone, trenbolone, nandrolone, peptides, sarms, nootropics">
+    <link rel="canonical" href="https://www.windapharm.com/products.html">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="images/ui/favicon.ico" type="image/x-icon">
     <style>
         .product-card {
@@ -135,9 +137,90 @@
         .contact-body a:hover {
             text-decoration: underline;
         }
+
+        .sidebar-categories {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .sidebar-heading {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e9ecef;
+            color: #333;
+        }
+        
+        .sidebar-list li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar-list li a {
+            color: #495057;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            display: block;
+            padding: 3px 0;
+        }
+        
+        .sidebar-list li a:hover, .sidebar-list li a.active {
+            color: #3498DB;
+            padding-left: 5px;
+        }
+        
+        .sidebar-list ul {
+            list-style: none;
+            padding-left: 15px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .sidebar-list ul li {
+            margin-bottom: 6px;
+        }
+        
+        .sidebar-list ul li a {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .page-title {
+            position: relative;
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .page-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, #3498DB, #2ECC71);
+            border-radius: 3px;
+        }
         
         .pagination {
             margin-top: 30px;
+        }
+        
+        .pagination .page-item.active .page-link {
+            background-color: #3498DB;
+            border-color: #3498DB;
+        }
+        
+        .pagination .page-link {
+            color: #3498DB;
+        }
+        
+        .pagination .page-link:hover {
+            color: #2980B9;
         }
     </style>
 </head>
@@ -180,18 +263,18 @@
                             <ul class="dropdown-menu" aria-labelledby="productsDropdownMenuLink">
                                 <li><a class="dropdown-item active" href="products.html">All Products</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="products.html#testosterone">Testosterone Powder</a></li>
-                                <li><a class="dropdown-item" href="products.html#trenbolone">Trenbolone Powder</a></li>
-                                <li><a class="dropdown-item" href="products.html#nandrolone">Nandrolone Powder</a></li>
-                                <li><a class="dropdown-item" href="products.html#boldenone">Boldenone Steroids</a></li>
-                                <li><a class="dropdown-item" href="products.html#drostanolone">Drostanolone Powder</a></li>
-                                <li><a class="dropdown-item" href="products.html#methenolone">Methenolone Powder</a></li>
-                                <li><a class="dropdown-item" href="products.html#oral">Oral Steroid Powders</a></li>
-                                <li><a class="dropdown-item" href="products.html#injectable">Injectable Steroids Oil</a></li>
-                                <li><a class="dropdown-item" href="products.html#bulk">Bulk Semi Steroid Oil</a></li>
-                                <li><a class="dropdown-item" href="products.html#sarms">Sarms powder</a></li>
-                                <li><a class="dropdown-item" href="products.html#nootropics">Nootropics Powder</a></li>
-                                <li><a class="dropdown-item" href="products.html#apis">Other Pharma APIs</a></li>
+                                <li><a class="dropdown-item" href="testosterone-powder.html">Testosterone Powder</a></li>
+                                <li><a class="dropdown-item" href="trenbolone-powder.html">Trenbolone Powder</a></li>
+                                <li><a class="dropdown-item" href="nandrolone-powder.html">Nandrolone Powder</a></li>
+                                <li><a class="dropdown-item" href="boldenone-steroids.html">Boldenone Steroids</a></li>
+                                <li><a class="dropdown-item" href="drostanolone-powder.html">Drostanolone Powder</a></li>
+                                <li><a class="dropdown-item" href="methenolone-powder.html">Methenolone Powder</a></li>
+                                <li><a class="dropdown-item" href="oral-steroid-powders.html">Oral Steroid Powders</a></li>
+                                <li><a class="dropdown-item" href="injectable-steroids-oil.html">Injectable Steroids Oil</a></li>
+                                <li><a class="dropdown-item" href="bulk-semi-steroid-oil.html">Bulk Semi Steroid Oil</a></li>
+                                <li><a class="dropdown-item" href="sarms-powder.html">Sarms powder</a></li>
+                                <li><a class="dropdown-item" href="nootropics-powder.html">Nootropics Powder</a></li>
+                                <li><a class="dropdown-item" href="other-pharma-apis.html">Other Pharma APIs</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -215,141 +298,173 @@
         </nav>
     </header>
 
-    <!-- 页面标题 -->
-    <div class="page-header">
-        <div class="container">
-            <h1>Products</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Products</li>
-                </ol>
-            </nav>
+    <!-- Page Title -->
+    <div class="bg-light">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="page-title h2">All Products</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Products</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- 主要内容 -->
+    <!-- Products Section -->
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <!-- 产品列表部分 -->
+                <!-- Products Grid -->
+                <div class="col-lg-9 order-lg-2">
                     <div class="product-grid">
-                        <!-- 产品1 -->
+                        <!-- Product Card: Tirzepatide -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/Tirzepatide-Peptide.jpg" class="card-img-top" alt="Tirzepatide Peptide">
+                            <img src="images/products/tirzepatide.jpg" class="card-img-top" alt="Tirzepatide Peptide">
                             <div class="card-body">
                                 <h5 class="card-title">Tirzepatide Peptide</h5>
                             </div>
                         </div>
-                        
-                        <!-- 产品2 -->
+
+                        <!-- Product Card: ACP-105 -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/ACP-105-Sarms.jpg" class="card-img-top" alt="ACP-105 Sarms powder">
+                            <img src="images/products/acp-105.jpg" class="card-img-top" alt="ACP-105 Sarms powder">
                             <div class="card-body">
-                                <h5 class="card-title">ACP-105 Sarms Powder</h5>
+                                <h5 class="card-title">ACP-105 Sarms powder</h5>
                             </div>
                         </div>
-                        
-                        <!-- 产品3 -->
+
+                        <!-- Product Card: YK11 -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/YK11-Sarms.jpg" class="card-img-top" alt="YK11 sarms powder">
+                            <img src="images/products/yk11.jpg" class="card-img-top" alt="yk11 sarms powder">
                             <div class="card-body">
-                                <h5 class="card-title">YK11 Sarms Powder</h5>
+                                <h5 class="card-title">yk11 sarms powder</h5>
                             </div>
                         </div>
-                        
-                        <!-- 产品4 -->
+
+                        <!-- Product Card: GW 501516 -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/GW-501516-Powder.jpg" class="card-img-top" alt="GW 501516 powder">
+                            <img src="images/products/gw-501516.jpg" class="card-img-top" alt="gw 501516 powder">
                             <div class="card-body">
-                                <h5 class="card-title">GW 501516 Powder</h5>
+                                <h5 class="card-title">gw 501516 powder</h5>
                             </div>
                         </div>
-                        
-                        <!-- 产品5 -->
+
+                        <!-- Product Card: Nandrolone decanoate -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/Nandrolone-Decanoate-Oil.jpg" class="card-img-top" alt="Nandrolone decanoate semi finished steroid oil bulk">
+                            <img src="images/products/nandrolone-decanoate-oil.jpg" class="card-img-top" alt="Nandrolone decanoate semi finished steroid oil bulk">
                             <div class="card-body">
-                                <h5 class="card-title">Nandrolone Decanoate Semi Finished Oil</h5>
+                                <h5 class="card-title">Nandrolone decanoate semi finished steroid oil bulk</h5>
                             </div>
                         </div>
-                        
-                        <!-- 产品6 -->
+
+                        <!-- Product Card: Trenbolone acetate -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/Trenbolone-Acetate-Oil.jpg" class="card-img-top" alt="Trenbolone acetate 100mg/ml Semi finished steroid oil">
+                            <img src="images/products/trenbolone-acetate-oil.jpg" class="card-img-top" alt="Trenbolone acetate 100mg/ml Semi finished steroid oil">
                             <div class="card-body">
-                                <h5 class="card-title">Trenbolone Acetate 100mg/ml Semi Finished Oil</h5>
+                                <h5 class="card-title">Trenbolone acetate 100mg/ml Semi finished steroid oil</h5>
                             </div>
                         </div>
-                        
-                        <!-- 产品7 -->
+
+                        <!-- Product Card: Semi finished Steroid oil Testosterone enanthate -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/Testosterone-Enanthate-Oil.jpg" class="card-img-top" alt="Semi finished Steroid oil Testosterone enanthate 250mg/ml bulk injection oil">
+                            <img src="images/products/test-enanthate-oil.jpg" class="card-img-top" alt="Semi finished Steroid oil Testosterone enanthate 250mg/ml bulk injection oil">
                             <div class="card-body">
-                                <h5 class="card-title">Testosterone Enanthate 250mg/ml Semi Finished Oil</h5>
+                                <h5 class="card-title">Semi finished Steroid oil Testosterone enanthate 250mg/ml bulk injection oil</h5>
                             </div>
                         </div>
-                        
-                        <!-- 产品8 -->
+
+                        <!-- Product Card: Boldenone undecylenate -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/Boldenone-Undecylenate-Liquid.jpg" class="card-img-top" alt="Boldenone undecylenate liquid">
+                            <img src="images/products/boldenone-undecylenate-liquid.jpg" class="card-img-top" alt="Boldenone undecylenate liquid">
                             <div class="card-body">
-                                <h5 class="card-title">Boldenone Undecylenate Liquid</h5>
+                                <h5 class="card-title">Boldenone undecylenate liquid</h5>
                             </div>
                         </div>
-                        
-                        <!-- 产品9 -->
+
+                        <!-- Product Card: Testosterone Enanthate -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/Testosterone-Enanthate-Oil.jpg" class="card-img-top" alt="Testosterone Enanthate 250mg/ml bulk semi finished steroid oil">
+                            <img src="images/products/test-enanthate-semi.jpg" class="card-img-top" alt="Testosterone Enanthate 250mg / ml bulk semi finished steroid oil">
                             <div class="card-body">
-                                <h5 class="card-title">Testosterone Enanthate 250mg/ml Bulk Oil</h5>
+                                <h5 class="card-title">Testosterone Enanthate 250mg / ml bulk semi finished steroid oil</h5>
                             </div>
                         </div>
-                        
-                        <!-- 产品10 -->
+
+                        <!-- Product Card: Stanozolol -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/Stanozolol-Powder.jpg" class="card-img-top" alt="Micronized stanozolol Powder For Sale">
+                            <img src="images/products/stanozolol.jpg" class="card-img-top" alt="Micronized stanozolol Powder For Sale">
                             <div class="card-body">
-                                <h5 class="card-title">Micronized Stanozolol Powder</h5>
+                                <h5 class="card-title">Micronized stanozolol Powder For Sale</h5>
                             </div>
                         </div>
-                        
-                        <!-- 产品11 -->
+
+                        <!-- Product Card: Testosterone Cypionate -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/Testosterone-Cypionate-Powder.jpg" class="card-img-top" alt="Buy Steroid Powder Testosterone Cypionate">
+                            <img src="images/products/test-cypionate.jpg" class="card-img-top" alt="Buy Steroid Powder Testosterone Cypionate">
                             <div class="card-body">
-                                <h5 class="card-title">Testosterone Cypionate Powder</h5>
+                                <h5 class="card-title">Buy Steroid Powder Testosterone Cypionate</h5>
                             </div>
                         </div>
-                        
-                        <!-- 产品12 -->
+
+                        <!-- Product Card: Trestolone Acetate -->
                         <div class="card product-card shadow-sm">
-                            <img src="images/products/Trestolone-Acetate-Powder.jpg" class="card-img-top" alt="Trestolone Acetate Raw Powder">
+                            <img src="images/products/trestolone-acetate.jpg" class="card-img-top" alt="Trestolone Acetate Raw Powder">
                             <div class="card-body">
                                 <h5 class="card-title">Trestolone Acetate Raw Powder</h5>
                             </div>
                         </div>
                     </div>
                     
-                        <!-- 分页 -->
-                    <nav aria-label="Page navigation" class="d-flex justify-content-center">
-                        <ul class="pagination">
+                    <!-- Pagination -->
+                    <nav aria-label="Products pagination" class="mt-4">
+                        <ul class="pagination justify-content-center">
                             <li class="page-item active"><a class="page-link" href="products.html">1</a></li>
                             <li class="page-item"><a class="page-link" href="products2.html">2</a></li>
                             <li class="page-item"><a class="page-link" href="products3.html">3</a></li>
                             <li class="page-item"><a class="page-link" href="products4.html">4</a></li>
                             <li class="page-item"><a class="page-link" href="products5.html">5</a></li>
-                            <li class="page-item"><a class="page-link" href="products6.html">6</a></li>
-                            <li class="page-item"><a class="page-link" href="products7.html">7</a></li>
-                            <li class="page-item"><a class="page-link" href="products8.html">8</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="products2.html" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
+                            <li class="page-item"><a class="page-link" href="products2.html">Next</a></li>
                         </ul>
                     </nav>
+                </div>
+
+                <!-- Sidebar / Categories -->
+                <div class="col-lg-3 order-lg-1">
+                    <div class="sidebar-categories mb-4">
+                        <h4 class="sidebar-heading">Product Categories</h4>
+                        <ul class="list-unstyled sidebar-list">
+                            <li><a href="testosterone-powder.html">Testosterone Powder</a></li>
+                            <li><a href="trenbolone-powder.html">Trenbolone Powder</a></li>
+                            <li><a href="nandrolone-powder.html">Nandrolone Powder</a></li>
+                            <li><a href="boldenone-steroids.html">Boldenone Steroids</a></li>
+                            <li><a href="drostanolone-powder.html">Drostanolone Powder</a></li>
+                            <li><a href="methenolone-powder.html">Methenolone Powder</a></li>
+                            <li><a href="oral-steroid-powders.html">Oral Steroid Powders</a></li>
+                            <li><a href="injectable-steroids-oil.html">Injectable Steroids Oil</a></li>
+                            <li><a href="bulk-semi-steroid-oil.html">Bulk Semi Steroid Oil</a></li>
+                            <li><a href="sarms-powder.html">Sarms powder</a></li>
+                            <li><a href="nootropics-powder.html">Nootropics Powder</a></li>
+                            <li><a href="other-pharma-apis.html">Other Pharma APIs</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Sidebar -->
+                    <div class="sidebar-contact p-4 bg-light rounded shadow-sm">
+                        <h5 class="sidebar-heading mb-3">Need Assistance?</h5>
+                        <p class="small mb-3">Contact our product specialists for price quotes or any questions about our products.</p>
+                        <div class="d-grid">
+                            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                        </div>
+                        <hr class="my-3">
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><i class="fab fa-whatsapp me-2 text-success"></i> +86 171 8678 5083</li>
+                            <li><i class="fas fa-envelope me-2 text-primary"></i> windaph@proton.me</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -449,7 +564,6 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const contactBtn = document.getElementById('contactBtn');
@@ -457,17 +571,18 @@
             const closeContactBtn = document.getElementById('closeContactBtn');
             
             if(contactBtn && contactModal && closeContactBtn) {
-                // 点击按钮打开浮窗
                 contactBtn.addEventListener('click', function() {
                     contactModal.style.display = 'block';
                 });
                 
-                // 点击关闭按钮关闭浮窗
                 closeContactBtn.addEventListener('click', function() {
                     contactModal.style.display = 'none';
                 });
             }
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html> 
