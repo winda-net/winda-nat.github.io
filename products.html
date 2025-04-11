@@ -3,13 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Winda Pharm | High-Quality Steroid Powders & APIs</title>
-    <meta name="description" content="Explore our wide range of high-quality steroid powders and APIs, including testosterone, trenbolone, nandrolone, and more. Winda Pharm offers products with purity over 99%.">
-    <meta name="keywords" content="steroid powders, testosterone, trenbolone, nandrolone, APIs">
-    <link rel="canonical" href="https://www.windapharm.com/products.html">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Products - Winda Pharm</title>
+    <meta name="description" content="Explore Winda Pharm's comprehensive range of high-quality steroid powders, peptides, SARMs and pharmaceutical ingredients for bodybuilding and health enhancement.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/ui/favicon.ico" type="image/x-icon">
+    <style>
+        .product-card {
+            transition: all 0.3s ease;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #f8f9fa;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .product-card .card-img-top {
+            height: 200px;
+            object-fit: contain;
+            padding: 15px 15px 5px 15px;
+            background-color: #ffffff;
+        }
+        
+        .product-card .card-body {
+            padding: 10px 15px 15px 15px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        
+        .product-card .card-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0;
+            color: #333;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        
+        .contact-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+        }
+        
+        .contact-float .btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-float .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        
+        .contact-float .btn i {
+            font-size: 1.5rem;
+        }
+        
+        .contact-modal {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            z-index: 1000;
+            width: 320px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.18);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            animation: slideIn 0.3s forwards;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .contact-header {
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #3498DB, #2ECC71);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .contact-header h4 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        
+        .contact-body {
+            padding: 20px;
+        }
+        
+        .contact-body p {
+            margin-bottom: 12px;
+            color: #444;
+            font-size: 0.95rem;
+        }
+        
+        .contact-body a {
+            color: #3498DB;
+            text-decoration: none;
+        }
+        
+        .contact-body a:hover {
+            text-decoration: underline;
+        }
+        
+        .pagination {
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -48,7 +178,7 @@
                                 Products
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="productsDropdownMenuLink">
-                                <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                                <li><a class="dropdown-item active" href="products.html">All Products</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="products.html#testosterone">Testosterone Powder</a></li>
                                 <li><a class="dropdown-item" href="products.html#trenbolone">Trenbolone Powder</a></li>
@@ -85,10 +215,10 @@
         </nav>
     </header>
 
-    <!-- 产品页面标题 -->
+    <!-- 页面标题 -->
     <div class="page-header">
         <div class="container">
-            <h1 id="categoryTitle">All Products</h1>
+            <h1>Products</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -98,170 +228,134 @@
         </div>
     </div>
 
-    <!-- 产品展示 -->
+    <!-- 主要内容 -->
     <section class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center mb-5">Our Products</h2>
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/testosterone-enanthate.jpg" class="card-img-top" alt="Testosterone Enanthate">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Testosterone Enanthate</h5>
-                                    <p class="card-text flex-grow-1">High-purity testosterone enanthate powder for muscle growth and performance enhancement.</p>
-                                    <a href="product-detail.html?id=1" class="btn btn-primary mt-auto">View Details</a>
-                                </div>
+                    <!-- 产品列表部分 -->
+                    <div class="product-grid">
+                        <!-- 产品1 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Tirzepatide-Peptide.jpg" class="card-img-top" alt="Tirzepatide Peptide">
+                            <div class="card-body">
+                                <h5 class="card-title">Tirzepatide Peptide</h5>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/testosterone-cypionate.jpg" class="card-img-top" alt="Testosterone Cypionate">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Testosterone Cypionate</h5>
-                                    <p class="card-text flex-grow-1">Ultra-pure testosterone cypionate powder for sustained muscle growth.</p>
-                                    <a href="product-detail.html?id=2" class="btn btn-primary mt-auto">View Details</a>
-                                </div>
+                        
+                        <!-- 产品2 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/ACP-105-Sarms.jpg" class="card-img-top" alt="ACP-105 Sarms powder">
+                            <div class="card-body">
+                                <h5 class="card-title">ACP-105 Sarms Powder</h5>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/boldenone-acetate.jpg" class="card-img-top" alt="Boldenone Acetate">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Boldenone Acetate</h5>
-                                    <p class="card-text flex-grow-1">High-quality boldenone acetate powder for lean muscle mass and endurance.</p>
-                                    <a href="product-detail.html?id=3" class="btn btn-primary mt-auto">View Details</a>
-                                </div>
+                        
+                        <!-- 产品3 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/YK11-Sarms.jpg" class="card-img-top" alt="YK11 sarms powder">
+                            <div class="card-body">
+                                <h5 class="card-title">YK11 Sarms Powder</h5>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/proviron-mesterolone.jpg" class="card-img-top" alt="Pure Proviron Mesterolone">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pure Proviron Mesterolone</h5>
-                                    <p class="card-text">Ultra-pure proviron mesterolone powder for muscle preservation and fat loss.</p>
-                                    <a href="product-detail.html?id=4" class="btn btn-primary">View Details</a>
-                                </div>
+                        
+                        <!-- 产品4 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/GW-501516-Powder.jpg" class="card-img-top" alt="GW 501516 powder">
+                            <div class="card-body">
+                                <h5 class="card-title">GW 501516 Powder</h5>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/turinabol.jpg" class="card-img-top" alt="Pure Turinabol">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pure Turinabol</h5>
-                                    <p class="card-text">High-purity 4-Chlorodehydromethyltestosterone powder for strength and performance.</p>
-                                    <a href="product-detail.html?id=5" class="btn btn-primary">View Details</a>
-                                </div>
+                        
+                        <!-- 产品5 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Nandrolone-Decanoate-Oil.jpg" class="card-img-top" alt="Nandrolone decanoate semi finished steroid oil bulk">
+                            <div class="card-body">
+                                <h5 class="card-title">Nandrolone Decanoate Semi Finished Oil</h5>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/nandrolone-phenpropionate.jpg" class="card-img-top" alt="Pure Nandrolone Phenpropionate">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pure Nandrolone Phenpropionate</h5>
-                                    <p class="card-text">Ultra-pure nandrolone phenpropionate powder for muscle mass and recovery.</p>
-                                    <a href="product-detail.html?id=6" class="btn btn-primary">View Details</a>
-                                </div>
+                        
+                        <!-- 产品6 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Trenbolone-Acetate-Oil.jpg" class="card-img-top" alt="Trenbolone acetate 100mg/ml Semi finished steroid oil">
+                            <div class="card-body">
+                                <h5 class="card-title">Trenbolone Acetate 100mg/ml Semi Finished Oil</h5>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/nandrolone-decanoate.jpg" class="card-img-top" alt="Pure Nandrolone Decanoate">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pure Nandrolone Decanoate</h5>
-                                    <p class="card-text">High-purity nandrolone decanoate powder for muscle growth and recovery.</p>
-                                    <a href="product-detail.html?id=7" class="btn btn-primary">View Details</a>
-                                </div>
+                        
+                        <!-- 产品7 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Testosterone-Enanthate-Oil.jpg" class="card-img-top" alt="Semi finished Steroid oil Testosterone enanthate 250mg/ml bulk injection oil">
+                            <div class="card-body">
+                                <h5 class="card-title">Testosterone Enanthate 250mg/ml Semi Finished Oil</h5>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/trenbolone-acetate.jpg" class="card-img-top" alt="Pure Trenbolone Acetate">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pure Trenbolone Acetate</h5>
-                                    <p class="card-text">Ultra-pure trenbolone acetate powder for advanced bodybuilding and cutting cycles.</p>
-                                    <a href="product-detail.html?id=8" class="btn btn-primary">View Details</a>
-                                </div>
+                        
+                        <!-- 产品8 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Boldenone-Undecylenate-Liquid.jpg" class="card-img-top" alt="Boldenone undecylenate liquid">
+                            <div class="card-body">
+                                <h5 class="card-title">Boldenone Undecylenate Liquid</h5>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/trenbolone-enanthate.jpg" class="card-img-top" alt="Pure Trenbolone Enanthate">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pure Trenbolone Enanthate</h5>
-                                    <p class="card-text">High-purity trenbolone enanthate powder for muscle growth and performance enhancement.</p>
-                                    <a href="product-detail.html?id=9" class="btn btn-primary">View Details</a>
-                                </div>
+                        
+                        <!-- 产品9 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Testosterone-Enanthate-Oil.jpg" class="card-img-top" alt="Testosterone Enanthate 250mg/ml bulk semi finished steroid oil">
+                            <div class="card-body">
+                                <h5 class="card-title">Testosterone Enanthate 250mg/ml Bulk Oil</h5>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/oxandrolone.jpg" class="card-img-top" alt="Pure Oxandrolone Anavar">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pure Oxandrolone Anavar</h5>
-                                    <p class="card-text">Ultra-pure oxandrolone powder for fat loss and muscle preservation.</p>
-                                    <a href="product-detail.html?id=10" class="btn btn-primary">View Details</a>
-                                </div>
+                        
+                        <!-- 产品10 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Stanozolol-Powder.jpg" class="card-img-top" alt="Micronized stanozolol Powder For Sale">
+                            <div class="card-body">
+                                <h5 class="card-title">Micronized Stanozolol Powder</h5>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/methandienone.jpg" class="card-img-top" alt="Methandienone Dianabol">
-                                <div class="card-body">
-                                    <h5 class="card-title">Methandienone Dianabol</h5>
-                                    <p class="card-text">High-purity methandienone powder for muscle growth and strength enhancement.</p>
-                                    <a href="product-detail.html?id=11" class="btn btn-primary">View Details</a>
-                                </div>
+                        
+                        <!-- 产品11 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Testosterone-Cypionate-Powder.jpg" class="card-img-top" alt="Buy Steroid Powder Testosterone Cypionate">
+                            <div class="card-body">
+                                <h5 class="card-title">Testosterone Cypionate Powder</h5>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/stanozolol.jpg" class="card-img-top" alt="Pure Stanozolol Winstrol">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pure Stanozolol Winstrol</h5>
-                                    <p class="card-text">Ultra-pure stanozolol powder for cutting and strength enhancement.</p>
-                                    <a href="product-detail.html?id=12" class="btn btn-primary">View Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/oxymetholone.jpg" class="card-img-top" alt="Pure Oxymetholone">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pure Oxymetholone</h5>
-                                    <p class="card-text">High-purity oxymetholone powder for muscle mass and strength enhancement.</p>
-                                    <a href="product-detail.html?id=13" class="btn btn-primary">View Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/methenolone-enanthate.jpg" class="card-img-top" alt="Pure Methenolone Enanthate">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pure Methenolone Enanthate</h5>
-                                    <p class="card-text">Ultra-pure methenolone enanthate powder for lean muscle gains and fat loss.</p>
-                                    <a href="product-detail.html?id=14" class="btn btn-primary">View Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/products/methenolone-acetate.jpg" class="card-img-top" alt="Pure Methenolone Acetate">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pure Methenolone Acetate</h5>
-                                    <p class="card-text">High-purity methenolone acetate powder for muscle preservation and performance.</p>
-                                    <a href="product-detail.html?id=15" class="btn btn-primary">View Details</a>
-                                </div>
+                        
+                        <!-- 产品12 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Trestolone-Acetate-Powder.jpg" class="card-img-top" alt="Trestolone Acetate Raw Powder">
+                            <div class="card-body">
+                                <h5 class="card-title">Trestolone Acetate Raw Powder</h5>
                             </div>
                         </div>
                     </div>
+                    
+                        <!-- 分页 -->
+                    <nav aria-label="Page navigation" class="d-flex justify-content-center">
+                        <ul class="pagination">
+                            <li class="page-item active"><a class="page-link" href="products.html">1</a></li>
+                            <li class="page-item"><a class="page-link" href="products2.html">2</a></li>
+                            <li class="page-item"><a class="page-link" href="products3.html">3</a></li>
+                            <li class="page-item"><a class="page-link" href="products4.html">4</a></li>
+                            <li class="page-item"><a class="page-link" href="products5.html">5</a></li>
+                            <li class="page-item"><a class="page-link" href="products6.html">6</a></li>
+                            <li class="page-item"><a class="page-link" href="products7.html">7</a></li>
+                            <li class="page-item"><a class="page-link" href="products8.html">8</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="products2.html" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer class="site-footer bg-dark text-secondary py-5">
         <div class="container">
             <div class="row">
@@ -273,14 +367,6 @@
                     <p class="small footer-about-text">
                         Your reliable partner for high-quality Active Pharmaceutical Ingredients (APIs), specializing in hormone steroid products and innovative health solutions. Committed to purity and customer satisfaction.
                     </p>
-                     <!-- Optional: Social Icons -->
-                     <!--
-                     <div class="footer-social mt-3">
-                         <a href="#" class="text-secondary me-2"><i class="fab fa-facebook-f"></i></a>
-                         <a href="#" class="text-secondary me-2"><i class="fab fa-twitter"></i></a>
-                         <a href="#" class="text-secondary"><i class="fab fa-linkedin-in"></i></a>
-                     </div>
-                     -->
                 </div>
 
                 <!-- Column 2: Quick Links -->
@@ -301,9 +387,6 @@
                         <li class="mb-2"><a href="contact.html">Contact Us</a></li>
                         <li class="mb-2"><a href="price.html">Pricing</a></li>
                         <li class="mb-2"><a href="news.html">News & Updates</a></li>
-                        <!-- Add FAQ/Shipping links if available -->
-                        <!-- <li class="mb-2"><a href="faq.html">FAQ</a></li> -->
-                        <!-- <li class="mb-2"><a href="shipping.html">Shipping Info</a></li> -->
                      </ul>
                 </div>
 
@@ -325,7 +408,7 @@
                         </li>
                          <li class="d-flex">
                             <i class="fas fa-map-marker-alt me-2 pt-1"></i>
-                            <span>Zhangjiang Hi-Tech Park, Shanghai, China</span> <!-- Shortened address -->
+                            <span>Zhangjiang Hi-Tech Park, Shanghai, China</span>
                         </li>
                     </ul>
                 </div>
@@ -345,31 +428,46 @@
 
     <!-- Contact Float Button -->
     <div class="contact-float">
-        <button id="contactBtn" class="btn btn-primary rounded-circle">
-            <i class="fas fa-comment-dots"></i>
+        <button id="contactBtn" class="btn btn-primary">
+            <i class="fas fa-headset"></i>
         </button>
     </div>
 
     <!-- Contact Modal -->
     <div id="contactModal" class="contact-modal">
-        <div class="contact-content">
-            <div class="contact-header">
-                <h4>Contact Us</h4>
-                <button id="closeContactBtn" class="btn-close"></button>
-            </div>
-            <div class="contact-body">
-                <p><i class="fas fa-building me-2"></i> <strong>Winda Pharm</strong></p>
-                <p><i class="fas fa-map-marker-alt me-2"></i> Address: Zhangjiang Hi-Tech Park, Pudong New Area, Shanghai</p>
-                <p><i class="fas fa-phone me-2"></i> Phone: +86 171 8678 5083</p>
-                <p><i class="fas fa-envelope me-2"></i> Email: windaph@proton.me</p>
-                <p><i class="fab fa-telegram me-2"></i> Telegram: <a href="https://t.me/Windapharm_bot" target="_blank">@Windapharm_bot</a></p>
-                <p><i class="fas fa-clock me-2"></i> Working Hours: Monday to Friday 9:00-18:00</p>
-            </div>
+        <div class="contact-header">
+            <h4><i class="fas fa-envelope me-2"></i> Contact Us</h4>
+            <button id="closeContactBtn" class="btn-close btn-close-white"></button>
+        </div>
+        <div class="contact-body">
+            <p><i class="fas fa-building me-2"></i> <strong>Winda Pharm</strong></p>
+            <p><i class="fas fa-map-marker-alt me-2"></i> Address: Zhangjiang Hi-Tech Park, Shanghai</p>
+            <p><i class="fas fa-phone me-2"></i> Phone: +86 171 8678 5083</p>
+            <p><i class="fas fa-envelope me-2"></i> Email: windaph@proton.me</p>
+            <p><i class="fab fa-telegram me-2"></i> Telegram: <a href="https://t.me/Windapharm_bot" target="_blank">@Windapharm_bot</a></p>
+            <p><i class="fas fa-clock me-2"></i> Working Hours: Mon-Fri 9:00-18:00</p>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/products.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactBtn = document.getElementById('contactBtn');
+            const contactModal = document.getElementById('contactModal');
+            const closeContactBtn = document.getElementById('closeContactBtn');
+            
+            if(contactBtn && contactModal && closeContactBtn) {
+                // 点击按钮打开浮窗
+                contactBtn.addEventListener('click', function() {
+                    contactModal.style.display = 'block';
+                });
+                
+                // 点击关闭按钮关闭浮窗
+                closeContactBtn.addEventListener('click', function() {
+                    contactModal.style.display = 'none';
+                });
+            }
+        });
+    </script>
 </body>
 </html> 

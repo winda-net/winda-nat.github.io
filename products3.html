@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Page 3 - Winda Pharm</title>
+    <meta name="description" content="Explore Winda Pharm's comprehensive range of high-quality steroid powders, peptides, SARMs and pharmaceutical ingredients for bodybuilding and health enhancement.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/ui/favicon.ico" type="image/x-icon">
+    <style>
+        .product-card {
+            transition: all 0.3s ease;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #f8f9fa;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .product-card .card-img-top {
+            height: 200px;
+            object-fit: contain;
+            padding: 15px 15px 5px 15px;
+            background-color: #ffffff;
+        }
+        
+        .product-card .card-body {
+            padding: 10px 15px 15px 15px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        
+        .product-card .card-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0;
+            color: #333;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        
+        .contact-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+        }
+        
+        .contact-float .btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-float .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        
+        .contact-float .btn i {
+            font-size: 1.5rem;
+        }
+        
+        .contact-modal {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            z-index: 1000;
+            width: 320px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.18);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            animation: slideIn 0.3s forwards;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .contact-header {
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #3498DB, #2ECC71);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .contact-header h4 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        
+        .contact-body {
+            padding: 20px;
+        }
+        
+        .contact-body p {
+            margin-bottom: 12px;
+            color: #444;
+            font-size: 0.95rem;
+        }
+        
+        .contact-body a {
+            color: #3498DB;
+            text-decoration: none;
+        }
+        
+        .contact-body a:hover {
+            text-decoration: underline;
+        }
+        
+        .pagination {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header sticky-top">
+        <!-- Top Bar -->
+        <div class="top-bar bg-dark py-1 d-none d-lg-block">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="text-white small me-3"><i class="fas fa-envelope me-1 opacity-75"></i> windaph@proton.me</span>
+                        <span class="text-white small"><i class="fab fa-whatsapp me-1 opacity-75"></i> +86 171 8678 5083</span>
+                    </div>
+                    <div>
+                         <a href="price.html" class="text-white small me-3 text-decoration-none top-bar-link"><i class="fas fa-tags me-1 opacity-75"></i> Pricing</a>
+                         <a href="news.html" class="text-white small text-decoration-none top-bar-link"><i class="fas fa-newspaper me-1 opacity-75"></i> News</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span style="color: #3498DB; font-weight: 700;">Winda</span><span style="color: #2ECC71; font-weight: 700;">Pharm</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="products.html" id="productsDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdownMenuLink">
+                                <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="products.html#testosterone">Testosterone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#trenbolone">Trenbolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#nandrolone">Nandrolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#boldenone">Boldenone Steroids</a></li>
+                                <li><a class="dropdown-item" href="products.html#drostanolone">Drostanolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#methenolone">Methenolone Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#oral">Oral Steroid Powders</a></li>
+                                <li><a class="dropdown-item" href="products.html#injectable">Injectable Steroids Oil</a></li>
+                                <li><a class="dropdown-item" href="products.html#bulk">Bulk Semi Steroid Oil</a></li>
+                                <li><a class="dropdown-item" href="products.html#sarms">Sarms powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#nootropics">Nootropics Powder</a></li>
+                                <li><a class="dropdown-item" href="products.html#apis">Other Pharma APIs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pure-steroid.html">Pure Steroid Powders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hgh-peptides.html">HGH & Peptides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="price.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="news.html">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 页面标题 -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Products</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 主要内容 -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- 产品列表部分 - 第3页产品 -->
+                    <div class="product-grid">
+                        <!-- 产品1 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Methenolone-Enanthate-Powder.jpg" class="card-img-top" alt="Methenolone Enanthate Powder For Sale">
+                            <div class="card-body">
+                                <h5 class="card-title">Methenolone Enanthate Powder</h5>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品2 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Methenolone-Acetate-Powder.jpg" class="card-img-top" alt="Methenolone Acetate Powder For Sale">
+                            <div class="card-body">
+                                <h5 class="card-title">Methenolone Acetate Powder</h5>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品3 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Methyldrostanolone-Superdrol-Powder.jpg" class="card-img-top" alt="Methyldrostanolone -Superdrol">
+                            <div class="card-body">
+                                <h5 class="card-title">Methyldrostanolone (Superdrol)</h5>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品4 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Drostanolone-Enanthate-Powder.jpg" class="card-img-top" alt="Drostanolone Enanthate">
+                            <div class="card-body">
+                                <h5 class="card-title">Drostanolone Enanthate</h5>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品5 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Drostanolone-Propionate-Powder.jpg" class="card-img-top" alt="Drostanolone Propionate">
+                            <div class="card-body">
+                                <h5 class="card-title">Drostanolone Propionate</h5>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品6 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Boldenone-Cypionate-Powder.jpg" class="card-img-top" alt="Boldenone Cypionate">
+                            <div class="card-body">
+                                <h5 class="card-title">Boldenone Cypionate</h5>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品7 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Boldenone-Acetate-Powder.jpg" class="card-img-top" alt="Boldenone Acetate Powder">
+                            <div class="card-body">
+                                <h5 class="card-title">Boldenone Acetate Powder</h5>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品8 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Boldenone-Undecylenate-Powder.jpg" class="card-img-top" alt="Raw Boldenone Undecylenate For Sale">
+                            <div class="card-body">
+                                <h5 class="card-title">Raw Boldenone Undecylenate</h5>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品9 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Boldenone-Base-Powder.jpg" class="card-img-top" alt="Boldenone Base Powder CAS: 846-48-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Boldenone Base Powder</h5>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品10 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Trenbolone-Hexahydrobenzylcarbonate-Powder.jpg" class="card-img-top" alt="Trenbolone hexahydrobenzylcarbonate powder">
+                            <div class="card-body">
+                                <h5 class="card-title">Trenbolone Hexahydrobenzylcarbonate</h5>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品11 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Trenbolone-Enanthate-Powder.jpg" class="card-img-top" alt="Trenbolone Enanthate Powder For Sale">
+                            <div class="card-body">
+                                <h5 class="card-title">Trenbolone Enanthate Powder</h5>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品12 -->
+                        <div class="card product-card shadow-sm">
+                            <img src="images/products/Nandrolone-Phenylpropionate-Powder.jpg" class="card-img-top" alt="Nandrolone phenylpropionate">
+                            <div class="card-body">
+                                <h5 class="card-title">Nandrolone Phenylpropionate</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 分页 -->
+                    <nav aria-label="Page navigation" class="d-flex justify-content-center">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="products.html">1</a></li>
+                            <li class="page-item"><a class="page-link" href="products2.html">2</a></li>
+                            <li class="page-item active"><a class="page-link" href="products3.html">3</a></li>
+                            <li class="page-item"><a class="page-link" href="products4.html">4</a></li>
+                            <li class="page-item"><a class="page-link" href="products5.html">5</a></li>
+                            <li class="page-item"><a class="page-link" href="products6.html">6</a></li>
+                            <li class="page-item"><a class="page-link" href="products7.html">7</a></li>
+                            <li class="page-item"><a class="page-link" href="products8.html">8</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="products4.html" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-dark text-secondary py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: About -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">
+                         <span style="color: #3498DB; font-weight: 700;">Winda</span><span style="color: #2ECC71; font-weight: 700;">Pharm</span>
+                    </h5>
+                    <p class="small footer-about-text">
+                        Your reliable partner for high-quality Active Pharmaceutical Ingredients (APIs), specializing in hormone steroid products and innovative health solutions. Committed to purity and customer satisfaction.
+                    </p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-white mb-3 footer-heading">Quick Links</h6>
+                    <ul class="list-unstyled small footer-links">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="products.html">Products</a></li>
+                        <li class="mb-2"><a href="pure-steroid.html">Pure Steroids</a></li>
+                        <li class="mb-2"><a href="hgh-peptides.html">HGH & Peptides</a></li>
+                    </ul>
+                </div>
+
+                 <!-- Column 3: Support Links -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                     <h6 class="text-white mb-3 footer-heading">Support</h6>
+                     <ul class="list-unstyled small footer-links">
+                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                        <li class="mb-2"><a href="price.html">Pricing</a></li>
+                        <li class="mb-2"><a href="news.html">News & Updates</a></li>
+                     </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-white mb-3 footer-heading">Contact Info</h6>
+                    <ul class="list-unstyled small footer-contact">
+                        <li class="d-flex mb-2">
+                            <i class="fas fa-envelope me-2 pt-1"></i>
+                            <span>windaph@proton.me</span>
+                        </li>
+                        <li class="d-flex mb-2">
+                             <i class="fab fa-whatsapp me-2 pt-1"></i>
+                             <span>+86 171 8678 5083</span>
+                         </li>
+                        <li class="d-flex mb-2">
+                            <i class="fab fa-telegram me-2 pt-1"></i>
+                            <span>+86 171 8678 5083</span>
+                        </li>
+                         <li class="d-flex">
+                            <i class="fas fa-map-marker-alt me-2 pt-1"></i>
+                            <span>Zhangjiang Hi-Tech Park, Shanghai, China</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider my-4">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="small copyright-text mb-0">
+                        &copy; <script>document.write(new Date().getFullYear());</script> Winda Pharmaceuticals Co.,Ltd. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Float Button -->
+    <div class="contact-float">
+        <button id="contactBtn" class="btn btn-primary">
+            <i class="fas fa-headset"></i>
+        </button>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="contact-header">
+            <h4><i class="fas fa-envelope me-2"></i> Contact Us</h4>
+            <button id="closeContactBtn" class="btn-close btn-close-white"></button>
+        </div>
+        <div class="contact-body">
+            <p><i class="fas fa-building me-2"></i> <strong>Winda Pharm</strong></p>
+            <p><i class="fas fa-map-marker-alt me-2"></i> Address: Zhangjiang Hi-Tech Park, Shanghai</p>
+            <p><i class="fas fa-phone me-2"></i> Phone: +86 171 8678 5083</p>
+            <p><i class="fas fa-envelope me-2"></i> Email: windaph@proton.me</p>
+            <p><i class="fab fa-telegram me-2"></i> Telegram: <a href="https://t.me/Windapharm_bot" target="_blank">@Windapharm_bot</a></p>
+            <p><i class="fas fa-clock me-2"></i> Working Hours: Mon-Fri 9:00-18:00</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactBtn = document.getElementById('contactBtn');
+            const contactModal = document.getElementById('contactModal');
+            const closeContactBtn = document.getElementById('closeContactBtn');
+            
+            if(contactBtn && contactModal && closeContactBtn) {
+                // 点击按钮打开浮窗
+                contactBtn.addEventListener('click', function() {
+                    contactModal.style.display = 'block';
+                });
+                
+                // 点击关闭按钮关闭浮窗
+                closeContactBtn.addEventListener('click', function() {
+                    contactModal.style.display = 'none';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

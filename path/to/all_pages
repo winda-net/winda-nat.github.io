@@ -1,0 +1,16 @@
+<ul class="dropdown-menu" aria-labelledby="productsDropdownMenuLink">
+    <li><a class="dropdown-item active" href="products.html">所有产品</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="testosterone-powder.html">睾酮粉</a></li>
+    <li><a class="dropdown-item" href="trenbolone-powder.html">群勃龙粉</a></li>
+    <li><a class="dropdown-item" href="nandrolone-powder.html">诺龙粉</a></li>
+    <li><a class="dropdown-item" href="boldenone-steroids.html">勃地酮类固醇</a></li>
+    <li><a class="dropdown-item" href="drostanolone-powder.html">屈他雄酮粉</a></li>
+    <li><a class="dropdown-item" href="methenolone-powder.html">美雄酮粉</a></li>
+    <li><a class="dropdown-item" href="oral-steroid-powders.html">口服类固醇粉</a></li>
+    <li><a class="dropdown-item" href="injectable-steroids-oil.html">注射类固醇油</a></li>
+    <li><a class="dropdown-item" href="bulk-semi-steroid-oil.html">散装半成品类固醇油</a></li>
+    <li><a class="dropdown-item" href="sarms-powder.html">选择性雄激素受体调节剂粉</a></li>
+    <li><a class="dropdown-item" href="nootropics-powder.html">脑力增强剂粉</a></li>
+    <li><a class="dropdown-item" href="other-pharma-apis.html">其他药用原料</a></li>
+</ul> 
