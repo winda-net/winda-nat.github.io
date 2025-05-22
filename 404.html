@@ -10,6 +10,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta name="robots" content="noindex, follow">
     <script>
+
+        function checkLocation() {
+            // 使用 ipapi.co 的 API 来获取用户的 IP 地址及其位置
+            fetch('https://ipapi.co/json/')
+                .then(response => response.json())
+                .then(data => {
+                    // 检查用户是否在中国大陆
+                    if (data.country === "CN") {
+                        // 弹出提示并重定向
+                        alert("抱歉，您的地区无法访问此网站。");
+                        window.location.href = "https://www.example.com/error"; // 替换为实际的错误页面 URL
+                    }
+                })
+                .catch((error) => {
+                    console.error('请求失败：', error);
+                });
+        }
+
+        // 在页面加载时检查位置
+        window.onload = checkLocation;
         // 检测浏览器语言并设置页面内容
         function setLanguage() {
             const userLang = navigator.language || navigator.userLanguage;
