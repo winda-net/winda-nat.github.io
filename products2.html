@@ -19,8 +19,7 @@
                 .then(data => {
                     // 检查用户是否在中国大陆
                     if (data.country === "CN") {
-                        // 弹出提示并重定向
-                        alert("抱歉，您的地区无法访问此网站。");
+                        // 自动跳转到错误页面
                         window.location.href = "https://www.example.com/error"; // 替换为实际的错误页面 URL
                     }
                 })
